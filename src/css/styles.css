@@ -1,6 +1,13 @@
 :root {
   --font-family-main: "Montserrat", sans-serif;
+  --headers-color: #00324f;
+  --box-shadow: 2px 2px 4px 0px rgba(0, 103, 154, 0.41);
   --main-background-color: #f9f9f9;
+  --accent-gradient: linear-gradient(
+    180deg,
+    rgba(0, 159, 159, 0.6) 0%,
+    rgba(53, 219, 255, 0.6) 100%
+  );
   --border-grad-color: linear-gradient(180deg, #000000 0%, #00a6cb 62%);
   --hover-border-color: #4ec5eb;
   --btn-border-color: #4eafeb;
@@ -125,7 +132,7 @@ h1 > div {
   margin: 0 0 60px;
 }
 
-h2 {
+.hero h2 {
   font-weight: 400;
   font-size: 28px;
   line-height: 34px;
@@ -199,13 +206,48 @@ h2 {
 }
 /*  */
 /*  services section*/
+.services h2 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 33px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--headers-color);
+}
+.headers_decor {
+  text-align: center;
+}
+
+.accent {
+  display: inline-block;
+  vertical-align: top;
+  background: var(--accent-gradient);
+  width: 12px;
+  height: 12px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
 .services {
   padding: 85px 205px 80px;
   background-color: var(--main-background-color);
 }
 
+.service_description {
+  padding: 70px 0 60px;
+  justify-content: space-evenly;
+}
+
+.service_text {
+  font-size: 16px;
+  line-height: 116%;
+}
+
 ul {
   list-style: none;
+}
+
+.description {
+  margin: 0 0 0 60px;
 }
 
 .service_description {
@@ -214,6 +256,19 @@ ul {
 
 .service_item {
   display: flex;
+  align-items: center;
+  margin: 0 0 40px;
+}
+
+.service_item.midle {
+  margin: 0 0 40px 70px;
+}
+
+.list_title {
+  color: var(--headers-color);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .service_icons_list {
@@ -229,9 +284,29 @@ ul {
   height: 200px;
   background-color: var(--pure-white);
   margin: 10px;
-  box-shadow: 2px 2px 2px 2px black;
+}
+
+.service_icon_item:hover,
+.service_icon_item:focus {
+  box-shadow: var(--box-shadow);
 }
 
 .service_icon_item > img {
   margin: 0 auto;
+}
+
+.service_icon_item .small_icon {
+  margin: 20px 15px;
+  align-self: flex-start;
+}
+
+.service_icon_item p {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 90%;
+  text-align: center;
+}
+
+.service_icon_item.text {
+  flex-direction: column;
 }
