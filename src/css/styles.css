@@ -1,5 +1,6 @@
 :root {
   --font-family-main: "Montserrat", sans-serif;
+  --main-background-color: #f9f9f9;
   --border-grad-color: linear-gradient(180deg, #000000 0%, #00a6cb 62%);
   --hover-border-color: #4ec5eb;
   --btn-border-color: #4eafeb;
@@ -200,8 +201,37 @@ h2 {
 /*  services section*/
 .services {
   padding: 85px 205px 80px;
+  background-color: var(--main-background-color);
 }
 
 ul {
   list-style: none;
+}
+
+.service_description {
+  display: flex;
+}
+
+.service_item {
+  display: flex;
+}
+
+.service_icons_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service_icon_item {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: var(--pure-white);
+  margin: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.service_icon_item > img {
+  margin: 0 auto;
 }
