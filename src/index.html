@@ -21,7 +21,6 @@
           <a href="#">Послуги</a><a href="#">Ціни</a><a href="#">Відгуки</a
           ><a href="#" lang="en">FAQ</a>
         </nav>
-
         <div class="phone_number_block">
           <img src="./images/svg/phone.svg" alt="phone" width="30" />
           <div class="contact_number">
@@ -35,35 +34,42 @@
     </header>
     <main>
       <div class="hero">
-        <h1>
-          мобільний <br />
-          шиномонтаж
-        </h1>
-        <div class="location">
-          <img
-            src="./images/svg/location.svg"
-            alt="location-point"
-            width="30"
-          />
-          <p>Київ</p>
+        <div class="hero_title">
+          <h1>
+            мобільний
+            <div>шиномонтаж</div>
+          </h1>
+          <div class="location">
+            <img
+              src="./images/svg/location.svg"
+              alt="location-point"
+              width="30"
+            />
+            <p>Київ</p>
+          </div>
         </div>
-        <form action="#" method="#">
+        <form action="#" method="#" class="call_order_form">
           <h2>замовити виїзд спеціаліста 24/7</h2>
-          <input type="text" placeholder="Ім’я" /><input
+          <input type="text" placeholder="Ім’я" class="input_name" /><input
             type="text"
             placeholder="Телефон"
-          /><button type="submit">замовити дзвінок</button>
+            class="input_phone_number"
+          /><button type="submit" class="call_order_btn">
+            замовити дзвінок
+          </button>
         </form>
-        <div>
-          <div>
-            <img src="./images/svg/швидко.svg" alt="знак захисту" width="35" />
+        <div class="hero_bottom_block">
+          <div class="hero_bottom_item">
+            <img src="./images/svg/швидко.svg" alt="знак захисту" width="28" />
             <p>Швидко</p>
           </div>
-          <div>
+          <div class="grad_border"></div>
+          <div class="hero_bottom_item">
             <img src="./images/svg/зручно.svg" alt="знак якості" width="35" />
             <p>Зручно</p>
           </div>
-          <div>
+          <div class="grad_border"></div>
+          <div class="hero_bottom_item">
             <img src="./images/svg/якісно.svg" alt="знак добре" width="35" />
             <p>Якісно</p>
           </div>

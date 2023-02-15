@@ -1,5 +1,10 @@
 :root {
+  --font-family-main: "Montserrat", sans-serif;
+  --border-grad-color: linear-gradient(180deg, #000000 0%, #00a6cb 62%);
   --hover-border-color: #4ec5eb;
+  --btn-border-color: #4eafeb;
+  --btn-background-color: #041a2c;
+  --input-placeholder-color: #84a3b5;
   --pure-black: #000000;
   --pure-white: #ffffff;
   --addition-text-color: #bbbbbb;
@@ -13,7 +18,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family-main);
 }
 
 a {
@@ -25,7 +30,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 70px 58px;
+  padding: 20px 70px 0;
   background: var(--pure-black);
 }
 
@@ -76,8 +81,9 @@ nav a {
 
 /* hero */
 .hero {
-  padding: 80px 110px 110px 205px;
+  padding: 105px 110px 60px 205px;
   background-image: url(..//images/png/hero.png);
+  background-position: 150% 230%;
 }
 h1 {
   font-weight: 700;
@@ -101,7 +107,7 @@ h1 > div {
 
 .location {
   position: relative;
-  bottom: 50px;
+  bottom: 25px;
 }
 
 .location > p {
@@ -112,5 +118,81 @@ h1 > div {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.call_order_form {
+  margin: 0 0 60px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 25px 0;
+  color: var(--pure-white);
+}
+
+.input_name,
+.input_phone_number {
+  margin: 10px 0;
+  font-family: var(--font-family-main);
+  display: block;
+  line-height: 22px;
+  font-size: 18px;
+  padding: 15px 20px;
+  width: 330px;
+  border: 1px solid var(--main-border-color);
+  background: transparent;
+}
+.input_name::placeholder,
+.input_phone_number::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+.call_order_btn {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  width: 372px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: var(--font-family-main);
+  color: var(--pure-white);
+  border: 2px solid var(--btn-border-color);
+  background: var(--btn-background-color);
+}
+
+.call_order_btn:hover {
+  cursor: pointer;
+  border-color: var(--hover-border-color);
+}
+
+.hero_bottom_block {
+  display: flex;
+  justify-content: center;
+}
+
+.hero_bottom_block p {
+  font-size: 14px;
+  line-height: 116.4%;
+  color: var(--pure-white);
+}
+
+.hero_bottom_item {
+  display: flex;
+}
+.hero_bottom_item > p {
+  align-self: center;
+}
+
+.hero_bottom_item > img {
+  margin: 0 18px 0;
+}
+
+.grad_border {
+  width: 1px;
+  height: 40px;
+  margin: 0 50px 0 82px;
+  background: var(--border-grad-color);
 }
 /*  */
