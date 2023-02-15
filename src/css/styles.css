@@ -196,3 +196,11 @@ h2 {
   background: var(--border-grad-color);
 }
 /*  */
+/*  services section*/
+.services {
+  padding: 85px 205px 80px;
+}
+
+ul {
+  list-style: none;
+}
