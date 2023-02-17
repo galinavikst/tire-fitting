@@ -312,19 +312,26 @@ ul {
   flex-direction: column;
 }
 /* article */
-article > h2,
-article > p {
+article {
+  padding: 60px;
+  background-image: url("../images/png/tools.png");
+}
+
+.article_text {
+  width: 50%;
+  margin: 0 0 0 110px;
+}
+
+.article_text > h2,
+.article_text > p {
   font-weight: 400;
   font-size: 21px;
-  line-height: 117.4%;
+  margin: 0 0 10px;
+  line-height: 117%;
   text-align: center;
   color: var(--pure-white);
 }
 
-article {
-  padding: 60px 615px 60px 175px;
-  background-image: url("../images/png/tools.png");
-}
 /*  */
 /* servise for transport */
 .service_for_transport {
