@@ -1,5 +1,6 @@
 :root {
   --font-family-main: "Montserrat", sans-serif;
+  --time-color: #1f6792;
   --headers-color: #00324f;
   --box-shadow: 2px 2px 4px 0px rgba(0, 103, 154, 0.41);
   --main-background-color: #f9f9f9;
@@ -10,7 +11,6 @@
   );
   --border-grad-color: linear-gradient(180deg, #000000 0%, #00a6cb 62%);
   --hover-border-color: #4ec5eb;
-  --btn-border-color: #4eafeb;
   --btn-background-color: #041a2c;
   --input-placeholder-color: #84a3b5;
   --pure-black: #000000;
@@ -167,7 +167,7 @@ h1 > div {
   text-transform: uppercase;
   font-family: var(--font-family-main);
   color: var(--pure-white);
-  border: 2px solid var(--btn-border-color);
+  border: 2px solid var(--main-border-color);
   background: var(--btn-background-color);
 }
 
@@ -289,6 +289,7 @@ ul {
 .service_icon_item:hover,
 .service_icon_item:focus {
   box-shadow: var(--box-shadow);
+  transition: 150ms all ease-in-out;
 }
 
 .service_icon_item > img {
@@ -341,6 +342,7 @@ article {
   font-size: 33px;
   line-height: 25px;
   text-transform: uppercase;
+  color: var(--headers-color);
 }
 
 .transport_cards_list {
@@ -365,5 +367,117 @@ article {
   width: 70%;
   text-transform: uppercase;
   color: var(--headers-color);
+}
+/*  */
+/* call-cost section */
+
+.call_cost_section {
+  padding: 0 100px;
+  background-color: var(--main-background-color);
+}
+
+.headers_decor.call_cost,
+.headers_decor.repair_price {
+  text-align: start;
+}
+
+.call_cost h2,
+.repair_price h2 {
+  display: inline;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 33px;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--headers-color);
+}
+
+.city_area_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 0 55px;
+}
+
+.city_title_block {
+  width: 48%;
+  background-image: url("../images/svg/shadow-ellipse.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.city_title {
+  width: fit-content;
+  margin: 0 auto 30px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 127%;
+  color: var(--headers-color);
+  border-bottom: 2px solid var(--main-border-color);
+}
+
+.timing_price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timing_price_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+  height: 240px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 1px;
+  border: 1px solid var(--main-border-color);
+  background-color: var(--pure-white);
+}
+
+.timing {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--time-color);
+}
+
+.price {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: var(--main-border-color);
+}
+
+.addition_price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.make_order_btn {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid var(--main-border-color);
+  border-top: 2px solid var(--main-border-color);
+  background-color: var(--pure-white);
+}
+
+.make_order_btn:hover,
+.make_order_btn:focus {
+  transition: 150ms all ease-in-out;
+  color: var(--pure-white);
+  background-color: var(--main-border-color);
+}
+/*  */
+/* repair_price_section */
+.repair_price_section {
+  padding: 0 115px;
 }
 /*  */
