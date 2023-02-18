@@ -36,59 +36,60 @@ a {
   color: var(--pure-white);
 }
 
-/* header */
-/* header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 70px 0;
-  background: var(--pure-black);
+ul {
+  list-style: none;
 }
 
-.nav_contact {
-  display: flex;
-}
-
-nav {
-  align-self: center;
-}
-
-nav a {
-  font-weight: 500;
-  font-size: 19px;
-  line-height: 23px;
-  margin: 0 25px;
-}
-.phone_number_block {
-  display: flex;
-  padding: 17px 40px;
-  margin: 0 0 0 25px;
-  border: 1px solid var(--main-border-color);
-}
-
-.phone_number_block img,
-.location img {
-  margin: 0 10px 0 0;
-}
-
-.contact_number {
-  align-self: center;
-}
-
-.phone_number_link {
-  font-weight: 500;
-  font-size: 23px;
-  line-height: 28px;
-}
-
-.time_call_info {
-  color: var(--addition-text-color);
-  font-size: 14px;
-  line-height: 17px;
+.headers_decor {
   text-align: center;
-  letter-spacing: 0.1em;
-} */
-/*  */
+}
+.accent {
+  display: inline-block;
+  vertical-align: top;
+  background: var(--accent-gradient);
+  width: 12px;
+  height: 12px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
 
+.headers_decor.call_cost,
+.headers_decor.repair_price {
+  text-align: start;
+}
+
+.call_cost h2,
+.repair_price h2 {
+  display: inline;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 33px;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--headers-color);
+}
+
+.slider_btns {
+  text-align: center;
+}
+
+.slider_btn {
+  margin: 15px;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  outline: 1px solid var(--disable-btn-color);
+  outline-offset: 3px;
+  border: 1px solid var(--disable-btn-color);
+}
+
+.slider_btn:hover,
+.slider_btn:focus {
+  outline: 1px solid var(--secondary-accent-color);
+  border: 1px solid var(--secondary-accent-color);
+  transition: all 150ms ease-in-out;
+}
 /* hero */
 .hero {
   padding: 105px 110px 60px 205px;
@@ -206,362 +207,4 @@ h1 > div {
   margin: 0 50px 0 82px;
   background: var(--border-grad-color);
 }
-/*  */
-/*  services section*/
-.services h2 {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 33px;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--headers-color);
-}
-.headers_decor {
-  text-align: center;
-}
-.accent {
-  display: inline-block;
-  vertical-align: top;
-  background: var(--accent-gradient);
-  width: 12px;
-  height: 12px;
-  transform: matrix(1, 0, 0, -1, 0, 0);
-}
-
-.services {
-  padding: 85px 205px 80px;
-  background-color: var(--main-background-color);
-}
-
-.service_description {
-  padding: 70px 0 60px;
-  justify-content: space-evenly;
-}
-
-.service_text {
-  font-size: 16px;
-  line-height: 116%;
-}
-
-ul {
-  list-style: none;
-}
-
-.description {
-  margin: 0 0 0 60px;
-}
-
-.service_description {
-  display: flex;
-}
-
-.service_item {
-  display: flex;
-  align-items: center;
-  margin: 0 0 40px;
-}
-
-.service_item.midle {
-  margin: 0 0 40px 70px;
-}
-
-.list_title {
-  color: var(--headers-color);
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.service_icons_list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.service_icon_item {
-  display: flex;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  background-color: var(--pure-white);
-  margin: 10px;
-}
-
-.service_icon_item:hover,
-.service_icon_item:focus {
-  box-shadow: var(--box-shadow);
-  transition: 150ms all ease-in-out;
-}
-
-.service_icon_item > img {
-  margin: 0 auto;
-}
-
-.service_icon_item .small_icon {
-  margin: 20px 15px;
-  align-self: flex-start;
-}
-
-.service_icon_item p {
-  font-weight: 500;
-  font-size: 19px;
-  line-height: 90%;
-  text-align: center;
-}
-
-.service_icon_item.text {
-  flex-direction: column;
-}
-/* article */
-/* article {
-  padding: 60px;
-  background-image: url("../images/png/tools.png");
-}
-
-.article_text {
-  width: 50%;
-  margin: 0 0 0 110px;
-}
-
-.article_text > h2,
-.article_text > p {
-  font-weight: 400;
-  font-size: 21px;
-  margin: 0 0 10px;
-  line-height: 117%;
-  text-align: center;
-  color: var(--pure-white);
-} */
-
-/*  */
-/* servise for transport */
-.service_for_transport {
-  padding: 70px 205px 80px;
-  text-align: center;
-  background: var(--main-background-color);
-}
-.transport_section {
-  margin: 0 0 60px;
-}
-
-.service_for_transport h2 {
-  display: inline;
-  font-weight: 700;
-  font-size: 33px;
-  line-height: 25px;
-  text-transform: uppercase;
-  color: var(--headers-color);
-}
-
-.transport_cards_list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.transport_card_item {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-  width: 250px;
-  height: 240px;
-  background-color: var(--pure-white);
-}
-
-.transport_card_item > p {
-  font-size: 16px;
-  line-height: 20px;
-  margin: 35px auto;
-  width: 70%;
-  text-transform: uppercase;
-  color: var(--headers-color);
-}
-/*  */
-/* call-cost section */
-
-.call_cost_section {
-  padding: 0 100px;
-  background-color: var(--main-background-color);
-}
-
-.headers_decor.call_cost,
-.headers_decor.repair_price {
-  text-align: start;
-}
-
-.call_cost h2,
-.repair_price h2 {
-  display: inline;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 33px;
-  text-align: right;
-  text-transform: uppercase;
-  color: var(--headers-color);
-}
-
-.city_area_container {
-  display: flex;
-  justify-content: space-between;
-  padding: 45px 0 55px;
-}
-
-.city_title_block {
-  width: 48%;
-  background-image: url("../images/svg/shadow-ellipse.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.city_title {
-  width: fit-content;
-  margin: 0 auto 30px;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 127%;
-  color: var(--headers-color);
-  border-bottom: 2px solid var(--main-border-color);
-}
-
-.timing_price {
-  display: flex;
-  justify-content: space-between;
-}
-
-.timing_price_item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 45%;
-  height: 240px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-  border-radius: 1px;
-  border: 1px solid var(--main-border-color);
-  background-color: var(--pure-white);
-}
-
-.timing {
-  margin-top: 30px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: var(--time-color);
-}
-
-.price {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  color: var(--main-border-color);
-}
-
-.addition_price {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-}
-
-.make_order_btn {
-  width: 100%;
-  padding: 15px 0;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: 1px solid var(--main-border-color);
-  border-top: 2px solid var(--main-border-color);
-  background-color: var(--pure-white);
-}
-
-.make_order_btn:hover,
-.make_order_btn:focus {
-  transition: 150ms all ease-in-out;
-  color: var(--pure-white);
-  background-color: var(--main-border-color);
-}
-/*  */
-/* repair_price_section */
-.repair_price_section {
-  padding: 0 100px;
-  background-color: var(--main-background-color);
-}
-/*  */
-/* work_examples */
-.work_examples_section {
-  padding: 0 100px 50px;
-  background-color: var(--main-background-color);
-}
-
-.examples {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 100px 30px 20px;
-}
-
-.examples > li {
-  width: 285px;
-  height: 450px;
-  cursor: pointer;
-}
-
-.examples > li:hover,
-.examples > li:focus {
-  transform: translateY(-15%);
-  transition: all 200ms ease-in-out;
-}
-
-.examples > li:hover > .decor_line,
-.examples > li:focus > .decor_line {
-  display: block;
-  transition: all 200ms ease-in-out;
-}
-
-.examples_item1 {
-  background-image: url("../images/png/our-job1.png");
-}
-.examples_item2 {
-  background-image: url("../images/png/our-job2.png");
-}
-.examples_item3 {
-  background-image: url("../images/png/our-job3.png");
-}
-.examples_item4 {
-  background-image: url("../images/png/our-job4.png");
-}
-
-.decor_line {
-  display: none;
-  width: 15%;
-  height: 100%;
-  background: var(--accent-gradient);
-}
-
-.examples_btns {
-  text-align: center;
-}
-
-.example_btn {
-  margin: 15px;
-  padding: 10px 15px;
-  font-size: 15px;
-  border-radius: 50%;
-  background: transparent;
-  cursor: pointer;
-  outline: 1px solid var(--disable-btn-color);
-  outline-offset: 3px;
-  border: 1px solid var(--disable-btn-color);
-}
-
-.example_btn:hover,
-.example_btn:focus {
-  outline: 1px solid var(--secondary-accent-color);
-  border: 1px solid var(--secondary-accent-color);
-  transition: all 150ms ease-in-out;
-}
-
 /*  */

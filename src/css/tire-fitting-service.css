@@ -1,0 +1,91 @@
+/*  services section*/
+.services h2 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 33px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--headers-color);
+}
+
+.services {
+  padding: 85px 205px 80px;
+  background-color: var(--main-background-color);
+}
+
+.service_description {
+  padding: 70px 0 60px;
+  justify-content: space-evenly;
+}
+
+.service_text {
+  font-size: 16px;
+  line-height: 116%;
+}
+
+.description {
+  margin: 0 0 0 60px;
+}
+
+.service_description {
+  display: flex;
+}
+
+.service_item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 40px;
+}
+
+.service_item.midle {
+  margin: 0 0 40px 70px;
+}
+
+.list_title {
+  color: var(--headers-color);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.service_icons_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service_icon_item {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: var(--pure-white);
+  margin: 10px;
+}
+
+.service_icon_item:hover,
+.service_icon_item:focus {
+  box-shadow: var(--box-shadow);
+  transition: 150ms all ease-in-out;
+}
+
+.service_icon_item > img {
+  margin: 0 auto;
+}
+
+.service_icon_item .small_icon {
+  margin: 20px 15px;
+  align-self: flex-start;
+}
+
+.service_icon_item p {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 90%;
+  text-align: center;
+}
+
+.service_icon_item.text {
+  flex-direction: column;
+}

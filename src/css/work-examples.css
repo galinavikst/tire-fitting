@@ -1,0 +1,51 @@
+/* work_examples */
+.work_examples_section {
+  padding: 0 100px 50px;
+  background-color: var(--main-background-color);
+}
+
+.examples {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px 30px 20px;
+}
+
+.examples > li {
+  width: 285px;
+  height: 450px;
+  cursor: pointer;
+}
+
+.examples > li:hover,
+.examples > li:focus {
+  transform: translateY(-15%);
+  transition: all 200ms ease-in-out;
+}
+
+.examples > li:hover > .decor_line,
+.examples > li:focus > .decor_line {
+  display: block;
+  transition: all 200ms ease-in-out;
+}
+
+.examples_item1 {
+  background-image: url("../images/png/our-job1.png");
+}
+.examples_item2 {
+  background-image: url("../images/png/our-job2.png");
+}
+.examples_item3 {
+  background-image: url("../images/png/our-job3.png");
+}
+.examples_item4 {
+  background-image: url("../images/png/our-job4.png");
+}
+
+.decor_line {
+  display: none;
+  width: 15%;
+  height: 100%;
+  background: var(--accent-gradient);
+}
+
+/*  */
