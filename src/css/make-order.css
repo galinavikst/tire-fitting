@@ -1,0 +1,124 @@
+.make_order_section {
+  display: flex;
+  background: var(--main-background-color);
+}
+
+.make_order_photo {
+  width: 43%;
+  height: 685px;
+  background-image: url("../images/png/make-order.png");
+}
+
+.decore_photo {
+  width: 15%;
+  height: 100%;
+  background: var(--accent-gradient);
+}
+
+.decore_make_order {
+  width: 2px;
+  background: var(--border-grad-color);
+}
+
+.make_order_block {
+  position: relative;
+  width: 57%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.decore_blockY {
+  width: 8%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background: var(--accent-gradient);
+}
+
+.decore_blockX {
+  width: 30%;
+  height: 3%;
+  position: absolute;
+  right: 0;
+  background: var(--accent-gradient);
+}
+
+.make_order_info {
+  background: var(--pure-black);
+  width: 100%;
+  height: 97%;
+}
+
+.headers_decor.make_order {
+  margin: 40px 0 25px;
+}
+.make_order .accent {
+  background: var(--bright-accent);
+}
+.make_order h2 {
+  display: inline;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: var(--pure-white);
+}
+
+.make_order_text p {
+  width: 73%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 116%;
+  text-align: center;
+  color: var(--disable-btn-color);
+}
+
+.make_order_text span {
+  color: var(--bright-accent);
+}
+
+.make_order_form {
+  text-align: center;
+  margin: 85px 0 0;
+}
+
+.input_phone_number.make_order,
+.input_name.make_order {
+  width: 390px;
+  margin: 10px auto;
+  border: 1px solid var(--make-order-form-input-color);
+}
+
+.input_phone_number.make_order::placeholder,
+.input_name.make_order::placeholder,
+.textarea_comment::placeholder {
+  color: var(--make-order-form-input-color);
+}
+
+.input_phone_number.make_order:focus,
+.input_phone_number.make_order:active,
+.textarea_comment:focus,
+.textarea_comment:active,
+.input_name.make_order:focus,
+.input_name.make_order:active {
+  outline: none;
+  border: 1px solid var(--main-border-color);
+}
+
+.textarea_comment {
+  margin: 10px auto;
+  font-family: var(--font-family-main);
+  display: block;
+  line-height: 22px;
+  font-size: 18px;
+  padding: 15px 20px;
+  width: 390px;
+  color: var(--pure-white);
+  border: 1px solid var(--make-order-form-input-color);
+  background: transparent;
+}
+
+.call_order_btn.make_order {
+  width: 430px;
+}

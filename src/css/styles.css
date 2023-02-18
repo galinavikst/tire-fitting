@@ -2,7 +2,9 @@
   --font-family-main: "Montserrat", sans-serif;
   --time-color: #1f6792;
   --disable-btn-color: #c9c9c9;
+  --make-order-form-input-color: #84a3b5;
   --headers-color: #00324f;
+  --bright-accent: #15ffff;
   --box-shadow: 2px 2px 4px 0px rgba(0, 103, 154, 0.41);
   --main-background-color: #f9f9f9;
   --accent-gradient: linear-gradient(
@@ -159,6 +161,13 @@ h1 > div {
 .input_name::placeholder,
 .input_phone_number::placeholder {
   color: var(--input-placeholder-color);
+}
+
+.input_name:active,
+.input_name:focus,
+.input_phone_number:active,
+.input_phone_number:focus {
+  outline: none;
 }
 
 .call_order_btn {
