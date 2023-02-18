@@ -1,6 +1,7 @@
 :root {
   --font-family-main: "Montserrat", sans-serif;
   --time-color: #1f6792;
+  --disable-btn-color: #c9c9c9;
   --headers-color: #00324f;
   --box-shadow: 2px 2px 4px 0px rgba(0, 103, 154, 0.41);
   --main-background-color: #f9f9f9;
@@ -12,6 +13,7 @@
   --border-grad-color: linear-gradient(180deg, #000000 0%, #00a6cb 62%);
   --hover-border-color: #4ec5eb;
   --btn-background-color: #041a2c;
+  --secondary-accent-color: #35dbff;
   --input-placeholder-color: #84a3b5;
   --pure-black: #000000;
   --pure-white: #ffffff;
@@ -35,7 +37,7 @@ a {
 }
 
 /* header */
-header {
+/* header {
   display: flex;
   justify-content: space-between;
   padding: 20px 70px 0;
@@ -84,7 +86,7 @@ nav a {
   line-height: 17px;
   text-align: center;
   letter-spacing: 0.1em;
-}
+} */
 /*  */
 
 /* hero */
@@ -312,7 +314,7 @@ ul {
   flex-direction: column;
 }
 /* article */
-article {
+/* article {
   padding: 60px;
   background-image: url("../images/png/tools.png");
 }
@@ -330,7 +332,7 @@ article {
   line-height: 117%;
   text-align: center;
   color: var(--pure-white);
-}
+} */
 
 /*  */
 /* servise for transport */
@@ -485,6 +487,81 @@ article {
 /*  */
 /* repair_price_section */
 .repair_price_section {
-  padding: 0 115px;
+  padding: 0 100px;
+  background-color: var(--main-background-color);
 }
+/*  */
+/* work_examples */
+.work_examples_section {
+  padding: 0 100px 50px;
+  background-color: var(--main-background-color);
+}
+
+.examples {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px 30px 20px;
+}
+
+.examples > li {
+  width: 285px;
+  height: 450px;
+  cursor: pointer;
+}
+
+.examples > li:hover,
+.examples > li:focus {
+  transform: translateY(-15%);
+  transition: all 200ms ease-in-out;
+}
+
+.examples > li:hover > .decor_line,
+.examples > li:focus > .decor_line {
+  display: block;
+  transition: all 200ms ease-in-out;
+}
+
+.examples_item1 {
+  background-image: url("../images/png/our-job1.png");
+}
+.examples_item2 {
+  background-image: url("../images/png/our-job2.png");
+}
+.examples_item3 {
+  background-image: url("../images/png/our-job3.png");
+}
+.examples_item4 {
+  background-image: url("../images/png/our-job4.png");
+}
+
+.decor_line {
+  display: none;
+  width: 15%;
+  height: 100%;
+  background: var(--accent-gradient);
+}
+
+.examples_btns {
+  text-align: center;
+}
+
+.example_btn {
+  margin: 15px;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  outline: 1px solid var(--disable-btn-color);
+  outline-offset: 3px;
+  border: 1px solid var(--disable-btn-color);
+}
+
+.example_btn:hover,
+.example_btn:focus {
+  outline: 1px solid var(--secondary-accent-color);
+  border: 1px solid var(--secondary-accent-color);
+  transition: all 150ms ease-in-out;
+}
+
 /*  */

@@ -1,0 +1,19 @@
+article {
+  padding: 60px;
+  background-image: url("../images/png/tools.png");
+}
+
+.article_text {
+  width: 50%;
+  margin: 0 0 0 110px;
+}
+
+.article_text > h2,
+.article_text > p {
+  font-weight: 400;
+  font-size: 21px;
+  margin: 0 0 10px;
+  line-height: 117%;
+  text-align: center;
+  color: var(--pure-white);
+}
