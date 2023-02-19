@@ -1,0 +1,82 @@
+footer {
+  position: relative;
+  display: flex;
+  height: 280px;
+  padding: 35px 40px 25px 100px;
+  background: var(--pure-black);
+  background-image: url("../images/svg/promotich-team.svg");
+  background-repeat: no-repeat;
+  background-position: right 95px bottom 25px;
+}
+
+footer .phone_number_block {
+  box-sizing: border-box;
+  width: inherit;
+  padding: 10px;
+  margin: 0;
+}
+
+footer .phone_number_block img {
+  width: 25px;
+  margin: 10px;
+}
+
+footer .contact_number {
+  text-align: start;
+}
+
+footer .call_order_form {
+  box-sizing: border-box;
+  width: 270px;
+}
+
+.rights,
+footer .call_order_form {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto 0 auto;
+}
+
+footer .phone_number_link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.footer_tools_img {
+  position: absolute;
+  right: 40px;
+  bottom: 27px;
+}
+
+.logo_number {
+  padding: 20px;
+  width: 265px;
+  text-align: center;
+}
+
+.logo_number img {
+  margin: 15px;
+}
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 28%;
+  top: 50%;
+  transform: translate(-50%, -82%);
+}
+
+.footer_nav a {
+  margin: 5px 0;
+}
+
+.rights {
+  bottom: 25px;
+  width: fit-content;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--disable-btn-color);
+}

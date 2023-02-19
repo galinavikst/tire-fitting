@@ -93,13 +93,16 @@
 }
 
 .make_order_form {
+  box-sizing: border-box;
+  width: 390px;
   text-align: center;
   top: 33%;
 }
 
 .input_phone_number.make_order,
 .input_name.make_order {
-  width: 390px;
+  box-sizing: border-box;
+  width: inherit;
   margin: 10px auto;
   border: 1px solid var(--make-order-form-input-color);
 }
@@ -121,18 +124,20 @@
 }
 
 .textarea_comment {
+  box-sizing: border-box;
   margin: 10px auto;
   font-family: var(--font-family-main);
   display: block;
   line-height: 22px;
   font-size: 18px;
   padding: 15px 20px;
-  width: 390px;
+  width: inherit;
   color: var(--pure-white);
   border: 1px solid var(--make-order-form-input-color);
   background: transparent;
 }
 
 .call_order_btn.make_order {
-  width: 430px;
+  box-sizing: border-box;
+  width: inherit;
 }
