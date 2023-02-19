@@ -2,6 +2,7 @@
   --font-family-main: "Montserrat", sans-serif;
   --time-color: #1f6792;
   --disable-btn-color: #c9c9c9;
+  --addition-bg-color: #f4f6f7;
   --make-order-form-input-color: #84a3b5;
   --headers-color: #00324f;
   --bright-accent: #15ffff;
@@ -40,6 +41,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+.hidden {
+  display: none;
 }
 
 .headers_decor {
