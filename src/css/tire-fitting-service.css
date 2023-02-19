@@ -89,3 +89,29 @@
 .service_icon_item.text {
   flex-direction: column;
 }
+
+.invert_out {
+  animation: outRotateY180 1s 1 forwards;
+}
+
+.invert_back {
+  animation: backRottateY-180 1s 1 forwards;
+}
+
+@keyframes outRotateY180 {
+  form {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes backRottateY-180 {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}

@@ -20,7 +20,7 @@ function showHideAnswer(el) {
 
 export function addEventToQuestionBtn() {
   const questionsBtnsArr = document.querySelectorAll(".question_btn");
-  for (let el of questionsBtnsArr) {
-    el.addEventListener("click", () => showHideAnswer(el));
-  }
+  questionsBtnsArr.forEach((el) =>
+    el.addEventListener("click", () => showHideAnswer(el))
+  );
 }
