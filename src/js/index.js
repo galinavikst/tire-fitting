@@ -1,5 +1,6 @@
-import { addBgColor, addEventToQuestionBtn } from "./questions.js";
+import { addEvents } from "./events.js";
+import { addBgColor } from "./questions.js";
 
 addBgColor();
 
-addEventToQuestionBtn();
+addEvents();

@@ -1,12 +1,4 @@
-const cardsArr = document.querySelectorAll(".service_icon_item");
-
-function addEvent(arr, func) {
-  arr.forEach((el) => {
-    el.addEventListener("click", () => func(el));
-  });
-}
-
-function invert(el) {
+export function invert(el) {
   if (!el.classList.contains("invert_out")) {
     el.classList.add("invert_out");
   } else {
@@ -19,5 +11,3 @@ function invert(el) {
     }, 300);
   });
 }
-
-addEvent(cardsArr, invert);
