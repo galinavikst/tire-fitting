@@ -9,13 +9,13 @@
   background-image: url("../images/png/make-order.png");
 }
 
-.decore_photo {
+.decor_photo {
   width: 15%;
   height: 100%;
   background: var(--accent-gradient);
 }
 
-.decore_make_order {
+.decor_make_order {
   width: 2px;
   background: var(--border-grad-color);
 }
@@ -28,7 +28,7 @@
   justify-content: end;
 }
 
-.decore_blockY {
+.decor_blockY {
   width: 8%;
   height: 100%;
   position: absolute;
@@ -36,7 +36,7 @@
   background: var(--accent-gradient);
 }
 
-.decore_blockX {
+.decor_blockX {
   width: 30%;
   height: 3%;
   position: absolute;
@@ -56,8 +56,8 @@
 .make_order_form {
   position: absolute;
   left: 50%;
-  width: 100%;
-  transform: translateX(-54%);
+  width: 73%;
+  transform: translateX(-55%);
 }
 
 .headers_decor.make_order {
@@ -79,8 +79,7 @@
   color: var(--pure-white);
 }
 
-.make_order_text p {
-  width: 73%;
+.make_order_text {
   margin: 0 auto;
   font-size: 18px;
   line-height: 116%;
@@ -94,7 +93,7 @@
 
 .make_order_form {
   box-sizing: border-box;
-  width: 390px;
+  width: 70%;
   text-align: center;
   top: 33%;
 }
