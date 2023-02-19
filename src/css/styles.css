@@ -48,19 +48,25 @@ ul {
 .accent {
   display: inline-block;
   vertical-align: top;
-  background: var(--accent-gradient);
   width: 12px;
   height: 12px;
   transform: matrix(1, 0, 0, -1, 0, 0);
+  background: var(--accent-gradient);
 }
 
 .headers_decor.call_cost,
-.headers_decor.repair_price {
+.headers_decor.repair_price,
+.headers_decor.work_examples,
+.headers_decor.testimonials,
+.headers_decor.questions {
   text-align: start;
 }
 
 .call_cost h2,
-.repair_price h2 {
+.repair_price h2,
+.work_examples h2,
+.testimonials h2,
+.questions h2 {
   display: inline;
   font-weight: 700;
   font-size: 45px;
@@ -68,81 +74,6 @@ ul {
   text-align: right;
   text-transform: uppercase;
   color: var(--headers-color);
-}
-
-.slider_btns {
-  text-align: center;
-}
-
-.slider_btn {
-  margin: 15px;
-  padding: 10px 15px;
-  font-size: 15px;
-  border-radius: 50%;
-  background: transparent;
-  cursor: pointer;
-  outline: 1px solid var(--disable-btn-color);
-  outline-offset: 3px;
-  border: 1px solid var(--disable-btn-color);
-}
-
-.slider_btn:hover,
-.slider_btn:focus {
-  outline: 1px solid var(--secondary-accent-color);
-  border: 1px solid var(--secondary-accent-color);
-  transition: all 150ms ease-in-out;
-}
-/* hero */
-.hero {
-  padding: 105px 110px 60px 205px;
-  background-image: url(..//images/png/hero.png);
-  background-position: 150% 230%;
-}
-h1 {
-  font-weight: 700;
-  font-size: 89px;
-  line-height: 90%;
-  text-transform: uppercase;
-  background: var(--main-linear-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-h1 > div {
-  font-size: 60px;
-}
-
-.hero_title {
-  display: flex;
-  justify-content: space-between;
-}
-
-.location {
-  position: relative;
-  bottom: 25px;
-}
-
-.location > p {
-  display: inline;
-  font-weight: 700;
-  font-size: 35px;
-  background: var(--main-linear-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.call_order_form {
-  margin: 0 0 60px;
-}
-
-.hero h2 {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 34px;
-  margin: 25px 0;
-  color: var(--pure-white);
 }
 
 .input_name,
@@ -183,37 +114,31 @@ h1 > div {
   background: var(--btn-background-color);
 }
 
-.call_order_btn:hover {
+.call_order_btn:hover,
+.call_order_btn:focus {
   cursor: pointer;
   border-color: var(--hover-border-color);
 }
 
-.hero_bottom_block {
-  display: flex;
-  justify-content: center;
+.slider_btns {
+  text-align: center;
 }
 
-.hero_bottom_block p {
-  font-size: 14px;
-  line-height: 116.4%;
-  color: var(--pure-white);
+.slider_btn {
+  margin: 15px;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  outline: 1px solid var(--disable-btn-color);
+  outline-offset: 3px;
+  border: 1px solid var(--disable-btn-color);
 }
 
-.hero_bottom_item {
-  display: flex;
+.slider_btn:hover,
+.slider_btn:focus {
+  outline: 1px solid var(--secondary-accent-color);
+  border: 1px solid var(--secondary-accent-color);
+  transition: all 150ms ease-in-out;
 }
-.hero_bottom_item > p {
-  align-self: center;
-}
-
-.hero_bottom_item > img {
-  margin: 0 18px 0;
-}
-
-.grad_border {
-  width: 1px;
-  height: 40px;
-  margin: 0 50px 0 82px;
-  background: var(--border-grad-color);
-}
-/*  */
