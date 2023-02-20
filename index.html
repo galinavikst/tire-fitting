@@ -64,8 +64,14 @@
         </div>
         <form action="#" method="#" class="call_order_form">
           <h2>замовити виїзд спеціаліста 24/7</h2>
-          <input type="text" placeholder="Ім’я" class="input_name" /><input
+          <input
             type="text"
+            name="name"
+            placeholder="Ім’я"
+            class="input_name"
+          /><input
+            type="text"
+            name="phone"
             placeholder="Телефон"
             class="input_phone_number"
           /><button type="submit" class="call_order_btn">
@@ -465,10 +471,12 @@
             <form action="#" class="make_order_form">
               <input
                 type="text"
+                name="name"
                 placeholder="Ім’я"
                 class="input_name make_order"
               /><input
                 type="text"
+                name="phone"
                 placeholder="Телефон"
                 class="input_phone_number make_order"
               />
@@ -592,9 +600,10 @@
         </div>
       </div>
       <form action="#" method="#" class="call_order_form">
-        <input type="text" placeholder="Ім’я" class="input_name" />
+        <input type="text" name="name" placeholder="Ім’я" class="input_name" />
         <input
           type="text"
+          name="phone"
           placeholder="Телефон"
           class="input_phone_number"
         /><button type="submit" class="call_order_btn">замовити дзвінок</button>
@@ -612,5 +621,6 @@
       <p class="rights">FORMULA ©️ 2023 All rights reserved</p>
     </footer>
     <script type="module" src="./src/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
   </body>
 </html>
