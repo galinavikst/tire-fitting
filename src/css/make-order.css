@@ -27,6 +27,10 @@
   background: var(--pure-black);
 }
 
+.make_order_info {
+  padding: 40px;
+}
+
 .decor_blockY {
   width: 8%;
   height: 100%;
@@ -68,7 +72,7 @@
 }
 
 .make_order_form {
-  width: 70%;
+  width: 74%;
   margin: 0 auto;
   text-align: center;
 }
