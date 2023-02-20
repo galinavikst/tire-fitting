@@ -38,6 +38,10 @@
   padding: 10px 0 10px 40px;
 }
 
+.question_item:hover {
+  cursor: pointer;
+}
+
 .addition_bg_color {
   background: var(--addition-bg-color);
 }

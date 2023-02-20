@@ -9,8 +9,8 @@ function addEvent(arr, func) {
 
 export function addEvents() {
   const cardsArr = document.querySelectorAll(".service_icon_item");
-  const questionsBtnsArr = document.querySelectorAll(".question_btn");
+  const questionsItemArr = document.querySelectorAll(".question_item");
 
   addEvent(cardsArr, invert);
-  addEvent(questionsBtnsArr, showHideAnswer);
+  addEvent(questionsItemArr, showHideAnswer);
 }
