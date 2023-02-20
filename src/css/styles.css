@@ -15,6 +15,14 @@
   );
   --border-grad-color: linear-gradient(180deg, #000000 0%, #00a6cb 62%);
   --hover-border-color: #4ec5eb;
+  --hover-btn-bg-color: linear-gradient(
+    180deg,
+    #041a2c 0%,
+    #041a2c 26.56%,
+    #003452 50%,
+    #041a2c 70.83%,
+    #041a2c 98.44%
+  );
   --btn-background-color: #041a2c;
   --secondary-accent-color: #35dbff;
   --input-placeholder-color: #84a3b5;
@@ -28,6 +36,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -126,6 +138,7 @@ ul {
 .call_order_btn:hover,
 .call_order_btn:focus {
   cursor: pointer;
+  background: var(--hover-btn-bg-color);
   border-color: var(--hover-border-color);
 }
 
