@@ -27,7 +27,7 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  width: 250px;
+  width: 22%;
   height: 240px;
   background-color: var(--pure-white);
 }
