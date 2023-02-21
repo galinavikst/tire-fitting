@@ -1,6 +1,8 @@
 article {
   padding: 60px;
   background-image: url("../images/png/tools.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .article_text {

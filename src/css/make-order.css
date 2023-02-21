@@ -7,6 +7,8 @@
   width: 43%;
   height: 685px;
   background-image: url("../images/png/make-order.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .decor_photo {
@@ -24,6 +26,8 @@
   position: relative;
   width: 57%;
   display: flex;
+  width: calc(100% - 43%);
+  justify-content: space-between;
   background: var(--pure-black);
 }
 
