@@ -1,12 +1,22 @@
 .hero {
-  padding: 105px 110px 60px 205px;
+  height: calc(100vh - 120px);
+  overflow: hidden;
   background-image: url(..//images/png/hero.png);
-  background-position: 150% 230%;
+  background-repeat: no-repeat;
+  background-size: 100% 122%;
+  background-position: top;
 }
+
+.hero_title {
+  display: flex;
+  justify-content: space-between;
+  margin: 85px 105px 25px 190px;
+}
+
 h1 {
   font-weight: 700;
   font-size: 89px;
-  line-height: 90%;
+  line-height: 85%;
   text-transform: uppercase;
   background: var(--main-linear-gradient);
   background-clip: text;
@@ -16,11 +26,6 @@ h1 {
 
 h1 > div {
   font-size: 60px;
-}
-
-.hero_title {
-  display: flex;
-  justify-content: space-between;
 }
 
 .location {
@@ -40,7 +45,7 @@ h1 > div {
 
 .call_order_form {
   box-sizing: border-box;
-  margin: 0 0 60px;
+  margin: 0 0 60px 190px;
   width: 370px;
 }
 
@@ -60,7 +65,7 @@ h1 > div {
 
 .hero_bottom_block p {
   font-size: 14px;
-  line-height: 116.4%;
+  line-height: 116%;
   color: var(--pure-white);
 }
 
