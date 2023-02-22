@@ -153,14 +153,13 @@ ul {
   border-radius: 50%;
   background: transparent;
   cursor: pointer;
-  outline: 1px solid var(--disable-btn-color);
+  outline: 1px solid var(--secondary-accent-color);
   outline-offset: 3px;
-  border: 1px solid var(--disable-btn-color);
+  border: 1px solid var(--secondary-accent-color);
 }
 
-.slider_btn:hover,
-.slider_btn:focus {
-  outline: 1px solid var(--secondary-accent-color);
-  border: 1px solid var(--secondary-accent-color);
+.slider_btn:disabled {
+  outline: 1px solid var(--disable-btn-color);
+  border: 1px solid var(--disable-btn-color);
   transition: all 150ms ease-in-out;
 }

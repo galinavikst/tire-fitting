@@ -1,5 +1,4 @@
 const prevBtns = document.querySelectorAll(".prev");
-const nextBtns = document.querySelectorAll(".next");
 
 export const itemCount = 4;
 let slideIndex = 0;
@@ -60,13 +59,11 @@ export function initSlider(arr) {
 }
 
 export function slider(arr, prev, next) {
-  console.log(arr, prev, next);
   addHidden(arr);
 
   // determine the start and end index of the visible items
   let startIndex = slideIndex * itemCount;
   let endIndex = startIndex + itemCount;
-
   console.log(startIndex, endIndex);
 
   // disable the previous button on the first page
