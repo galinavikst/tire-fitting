@@ -1,54 +1,16 @@
-const prevBtns = document.querySelectorAll(".prev");
-
 export const itemCount = 4;
-let slideIndex = 0;
 
-// disable the previous button on the first page
-prevBtns.forEach((el) => {
-  if (slideIndex === 0) {
-    el.disabled = true;
-  } else {
-    el.disabled = false;
-  }
-});
-
-//////////////////////////////
-const examUl = document.querySelector(".examples");
-const examItemArr = examUl.children;
-const prevBtnExam = examUl.nextElementSibling.firstElementChild;
-const nextBtnExam = examUl.nextElementSibling.lastElementChild;
-console.log(prevBtnExam, nextBtnExam);
-
-initSlider(examItemArr);
-
-prevBtnExam.addEventListener("click", function () {
-  slideIndex -= 1;
-  slider(examItemArr, prevBtnExam, nextBtnExam);
-});
-
-nextBtnExam.addEventListener("click", function () {
-  slideIndex += 1;
-  slider(examItemArr, prevBtnExam, nextBtnExam);
-});
-///////////////////////////
-const testimUl = document.querySelector(".testimonials_list");
-const testimLiArr = testimUl.children;
-const prevBtnTestim = testimUl.nextElementSibling.firstElementChild;
-const nextBtnTestim = testimUl.nextElementSibling.lastElementChild;
-console.log(prevBtnTestim, nextBtnTestim);
-
-initSlider(testimLiArr);
-
-prevBtnTestim.addEventListener("click", function () {
-  slideIndex -= 1;
-  slider(testimLiArr, prevBtnTestim, nextBtnTestim);
-});
-
-nextBtnTestim.addEventListener("click", function () {
-  slideIndex += 1;
-  slider(testimLiArr, prevBtnTestim, nextBtnTestim);
-});
-/////////////////////////////
+export function prevBtnsOnload() {
+  const prevBtns = document.querySelectorAll(".prev");
+  const slideIndex = 0;
+  prevBtns.forEach((el) => {
+    if (slideIndex === 0) {
+      el.disabled = true;
+    } else {
+      el.disabled = false;
+    }
+  });
+}
 
 export function initSlider(arr) {
   for (let i = 0; i < arr.length; i++) {
@@ -58,16 +20,17 @@ export function initSlider(arr) {
   }
 }
 
-export function slider(arr, prev, next) {
+export function slider(arr, prev, next, slideIndex) {
   addHidden(arr);
 
   // determine the start and end index of the visible items
-  let startIndex = slideIndex * itemCount;
-  let endIndex = startIndex + itemCount;
-  console.log(startIndex, endIndex);
+  // let startIndex = slideIndex * itemCount;
+  // let endIndex = startIndex + itemCount;
+  let startIndex = slideIndex + 1;
+  let endIndex = startIndex + 4;
 
   // disable the previous button on the first page
-  if (slideIndex === 0) {
+  if (slideIndex < 0) {
     prev.disabled = true;
   } else {
     prev.disabled = false;
@@ -82,7 +45,6 @@ export function slider(arr, prev, next) {
 
   // show the visible items
   let newVissibleArr = [...arr].slice(startIndex, endIndex);
-  console.log(newVissibleArr);
   removeHidden(newVissibleArr);
 }
 

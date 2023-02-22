@@ -1,20 +1,22 @@
-import { slider, itemCount, slideIndex, initSlider } from "./slider.js";
+import { slider, initSlider } from "./slider.js";
 
-// const examUl = document.querySelector(".examples");
-// const examItemArr = examUl.children;
-// const prevBtnExam = examUl.nextElementSibling.firstElementChild;
-// const nextBtnExam = examUl.nextElementSibling.lastElementChild;
+export function sliderExamples() {
+  const examUl = document.querySelector(".examples");
+  const examItemArr = examUl.children;
+  const prevBtnExam = examUl.nextElementSibling.firstElementChild;
+  const nextBtnExam = examUl.nextElementSibling.lastElementChild;
 
-// initSlider(examItemArr);
+  let slideIndexExam = 0;
 
-// //let slideIndex = 0;
+  initSlider(examItemArr);
 
-// prevBtnExam.addEventListener("click", function () {
-//   slideIndex -= 1;
-//   slider(examItemArr, prevBtnExam, nextBtnExam);
-// });
+  prevBtnExam.addEventListener("click", function () {
+    slideIndexExam -= 1;
+    slider(examItemArr, prevBtnExam, nextBtnExam, slideIndexExam);
+  });
 
-// nextBtnExam.addEventListener("click", function () {
-//   slideIndex += 1;
-//   slider(examItemArr, prevBtnExam, nextBtnExam);
-// });
+  nextBtnExam.addEventListener("click", function () {
+    slideIndexExam += 1;
+    slider(examItemArr, prevBtnExam, nextBtnExam, slideIndexExam);
+  });
+}

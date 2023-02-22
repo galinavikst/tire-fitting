@@ -1,20 +1,22 @@
-import { slider, itemCount, initSlider } from "./slider.js";
+import { slider, initSlider } from "./slider.js";
 
-// const testimUl = document.querySelector(".testimonials_list");
-// const testimLiArr = testimUl.children;
-// const prevBtnTestim = testimUl.nextElementSibling.firstElementChild;
-// const nextBtnTestim = testimUl.nextElementSibling.lastElementChild;
+export function sliderTestimonials() {
+  const testimUl = document.querySelector(".testimonials_list");
+  const testimLiArr = testimUl.children;
+  const prevBtnTestim = testimUl.nextElementSibling.firstElementChild;
+  const nextBtnTestim = testimUl.nextElementSibling.lastElementChild;
 
-// let slideIndex = 0;
+  let slideIndexTest = 0;
 
-// initSlider(testimLiArr);
+  initSlider(testimLiArr);
 
-// prevBtnTestim.addEventListener("click", function () {
-//   slideIndex -= 1;
-//   slider(testimLiArr);
-// });
+  prevBtnTestim.addEventListener("click", function () {
+    slideIndexTest -= 1;
+    slider(testimLiArr, prevBtnTestim, nextBtnTestim, slideIndexTest);
+  });
 
-// nextBtnTestim.addEventListener("click", function () {
-//   slideIndex += 1;
-//   slider(testimLiArr);
-// });
+  nextBtnTestim.addEventListener("click", function () {
+    slideIndexTest += 1;
+    slider(testimLiArr, prevBtnTestim, nextBtnTestim, slideIndexTest);
+  });
+}
