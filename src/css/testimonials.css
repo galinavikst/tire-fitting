@@ -4,7 +4,7 @@
   background-color: var(--main-background-color);
 }
 
-.testimonilas_list {
+.testimonials_list {
   display: flex;
   justify-content: space-around;
   padding: 55px 0 30px;

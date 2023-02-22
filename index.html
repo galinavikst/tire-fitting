@@ -69,11 +69,14 @@
             name="name"
             placeholder="Ім’я"
             class="input_name"
+            required
+            pattern="/^[a-zA-Z0-9]+$/"
           /><input
             type="text"
             name="phone"
             placeholder="Телефон"
             class="input_phone_number"
+            required
           /><button type="submit" class="call_order_btn">
             замовити дзвінок
           </button>
@@ -180,43 +183,57 @@
             <img
               src="./src/images/svg/service-card1.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card2.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card3.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card4.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card5.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
-          <li class="service_icon_item text">
+          <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card6-small.svg"
               alt="car service icon"
-              width=""
-              class="small_icon"
+              width="150"
             />
             <p>
               Допомога в <br />
@@ -227,64 +244,91 @@
             <img
               src="./src/images/svg/service-card7.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card8.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card9.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card10.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card11.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card12.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card13.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card14.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
           <li class="service_icon_item">
             <img
               src="./src/images/svg/service-card15.svg"
               alt="car service icon"
-              width=""
             />
+            <p>
+              Допомога в <br />
+              дорозі
+            </p>
           </li>
         </ul>
       </section>
@@ -395,10 +439,19 @@
           <li class="examples_item4">
             <div class="decor_line"></div>
           </li>
+          <li class="examples_item4">
+            <div class="decor_line"></div>
+          </li>
+          <li class="examples_item4">
+            <div class="decor_line"></div>
+          </li>
+          <li class="examples_item4">
+            <div class="decor_line"></div>
+          </li>
         </ul>
         <div class="slider_btns">
-          <button class="slider_btn">&#10216;</button
-          ><button class="slider_btn">&#10217;</button>
+          <button class="slider_btn prev">&#10216;</button
+          ><button class="slider_btn next">&#10217;</button>
         </div>
       </section>
       <section class="testimonials_section" id="testimonials_section">
@@ -406,7 +459,7 @@
           <div class="accent"></div>
           <h2>відгуки про нашу роботу</h2>
         </div>
-        <ul class="testimonilas_list">
+        <ul class="testimonials_list">
           <li class="testimonials_item">
             <p>Євген</p>
             <ul class="service_list">
@@ -447,10 +500,30 @@
             </ul>
             <p class="point">5.0</p>
           </li>
+          <li class="testimonials_item">
+            <p>Міша</p>
+            <ul class="service_list">
+              <li class="service_item">Підвезення та заміна акумулятора</li>
+              <li class="service_item">Підвезення палива</li>
+              <li class="service_item">Заміна колодок</li>
+              <li class="service_item">Підкачування коліс</li>
+            </ul>
+            <p class="point">5.0</p>
+          </li>
+          <li class="testimonials_item">
+            <p>Міша</p>
+            <ul class="service_list">
+              <li class="service_item">Підвезення та заміна акумулятора</li>
+              <li class="service_item">Підвезення палива</li>
+              <li class="service_item">Заміна колодок</li>
+              <li class="service_item">Підкачування коліс</li>
+            </ul>
+            <p class="point">5.0</p>
+          </li>
         </ul>
         <div class="slider_btns">
-          <button class="slider_btn">&#10216;</button
-          ><button class="slider_btn">&#10217;</button>
+          <button class="slider_btn prev">&#10216;</button
+          ><button class="slider_btn next">&#10217;</button>
         </div>
       </section>
       <section class="make_order_section">
@@ -474,11 +547,14 @@
                 name="name"
                 placeholder="Ім’я"
                 class="input_name make_order"
+                required
+                pattern="/^[a-zA-Z0-9]+$/"
               /><input
                 type="text"
                 name="phone"
                 placeholder="Телефон"
                 class="input_phone_number make_order"
+                required
               />
               <textarea
                 name="comment"
@@ -600,12 +676,20 @@
         </div>
       </div>
       <form action="#" method="#" class="call_order_form">
-        <input type="text" name="name" placeholder="Ім’я" class="input_name" />
+        <input
+          type="text"
+          name="name"
+          placeholder="Ім’я"
+          class="input_name"
+          required
+          pattern="/^[a-zA-Z0-9]+$/"
+        />
         <input
           type="text"
           name="phone"
           placeholder="Телефон"
           class="input_phone_number"
+          required
         /><button type="submit" class="call_order_btn">замовити дзвінок</button>
       </form>
       <div class="footer_nav">
@@ -623,5 +707,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/5.x/dist/jquery.inputmask.min.js"></script>
     <script type="module" src="./src/js/index.js"></script>
+    <script type="module" src="./src/js/slider.js"></script>
+    <script type="module" src="./src/js/testimonials.js"></script>
+    <script type="module" src="./src/js/work-examples.js"></script>
   </body>
 </html>

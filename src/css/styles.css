@@ -8,6 +8,7 @@
   --bright-accent: #15ffff;
   --box-shadow: 2px 2px 4px 0px rgba(0, 103, 154, 0.41);
   --main-background-color: #f9f9f9;
+  --warning-color: #ff0000;
   --accent-gradient: linear-gradient(
     180deg,
     rgba(0, 159, 159, 0.6) 0%,
