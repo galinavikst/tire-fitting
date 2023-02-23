@@ -26,44 +26,659 @@
     <link rel="stylesheet" href="./src/css/footer.css" />
   </head>
   <body>
-    <header>
-      <img src="./src/images/svg/logo.svg" alt="company-logo" width="107" />
-      <div class="nav_contact">
-        <nav>
-          <a href="#services_section">Послуги</a
-          ><a href="#costs_section">Ціни</a
-          ><a href="#testimonials_section">Відгуки</a
-          ><a href="#questions_section" lang="en">FAQ</a>
-        </nav>
-        <div class="phone_number_block">
-          <img src="./src/images/svg/phone.svg" alt="phone" width="30" />
-          <div class="contact_number">
-            <a href="tel:+38 (050) 63 65 462" class="phone_number_link"
-              >+38 (050) 63 65 462</a
-            >
-            <p class="time_call_info">цілодобово по Україні</p>
+    <div class="page">
+      <header>
+        <img src="./src/images/svg/logo.svg" alt="company-logo" width="107" />
+        <div class="nav_contact">
+          <nav>
+            <a href="#services_section">Послуги</a
+            ><a href="#costs_section">Ціни</a
+            ><a href="#testimonials_section">Відгуки</a
+            ><a href="#questions_section" lang="en">FAQ</a>
+          </nav>
+          <div class="phone_number_block">
+            <img src="./src/images/svg/phone.svg" alt="phone" width="30" />
+            <div class="contact_number">
+              <a href="tel:+38 (050) 63 65 462" class="phone_number_link"
+                >+38 (050) 63 65 462</a
+              >
+              <p class="time_call_info">цілодобово по Україні</p>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="hero">
-        <div class="hero_title">
-          <h1>
-            мобільний
-            <div>шиномонтаж</div>
-          </h1>
-          <div class="location">
+      </header>
+      <main>
+        <div class="hero">
+          <div class="hero_title">
+            <h1>
+              мобільний
+              <div>шиномонтаж</div>
+            </h1>
+            <div class="location">
+              <img
+                src="./src/images/svg/location.svg"
+                alt="location-point"
+                width="30"
+              />
+              <p>Київ</p>
+            </div>
+          </div>
+          <form action="#" method="#" class="call_order_form">
+            <h2>замовити виїзд спеціаліста 24/7</h2>
+            <input
+              type="text"
+              name="name"
+              placeholder="Ім’я"
+              class="input_name"
+              required
+              pattern="/^[a-zA-Z0-9]+$/"
+            /><input
+              type="text"
+              name="phone"
+              placeholder="Телефон"
+              class="input_phone_number"
+              required
+            /><button type="submit" class="call_order_btn">
+              замовити дзвінок
+            </button>
+          </form>
+          <div class="hero_bottom_block">
+            <div class="hero_bottom_item">
+              <img
+                src="./src/images/svg/швидко.svg"
+                alt="знак захисту"
+                width="28"
+              />
+              <p>Швидко</p>
+            </div>
+            <div class="grad_border"></div>
+            <div class="hero_bottom_item">
+              <img
+                src="./src/images/svg/зручно.svg"
+                alt="знак якості"
+                width="35"
+              />
+              <p>Зручно</p>
+            </div>
+            <div class="grad_border"></div>
+            <div class="hero_bottom_item">
+              <img
+                src="./src/images/svg/якісно.svg"
+                alt="знак добре"
+                width="35"
+              />
+              <p>Якісно</p>
+            </div>
+          </div>
+        </div>
+        <section class="services" id="services_section">
+          <div class="headers_decor">
+            <div class="accent"></div>
+            <h2>Послуги з шиномонтажу</h2>
+          </div>
+          <div class="service_description">
             <img
-              src="./src/images/svg/location.svg"
-              alt="location-point"
-              width="30"
+              src="./src/images/svg/service-main.svg"
+              alt="car servise icon"
+              width="365"
             />
-            <p>Київ</p>
+            <ul class="service_list">
+              <li class="service_item">
+                <img
+                  src="./src/images/svg/service-color-icon4.svg"
+                  alt=" car service icon"
+                  width="110"
+                />
+                <ul class="description">
+                  <li class="list_title">Допомога в дорозі</li>
+                  <li class="service_text">Підвезення та заміна акумулятора</li>
+                  <li class="service_text">Підвезення палива</li>
+                  <li class="service_text">Заміна колодок</li>
+                  <li class="service_text">Підкачування коліс</li>
+                </ul>
+              </li>
+              <li class="service_item midle">
+                <img
+                  src="./src/images/svg/service-color-icon1.svg"
+                  alt=" car service icon"
+                  width="110"
+                />
+                <ul class="description">
+                  <li class="list_title">Допомога в дорозі</li>
+                  <li class="service_text">Підвезення та заміна</li>
+                  <li class="service_text">Підвезення палива</li>
+                  <li class="service_text">Заміна колодок</li>
+                </ul>
+              </li>
+              <li class="service_item midle">
+                <img
+                  src="./src/images/svg/service-color-icon2.svg"
+                  alt=" car service icon"
+                  width="110"
+                />
+                <ul class="description">
+                  <li class="list_title">Допомога в дорозі</li>
+                  <li class="service_text">Підвезення та заміна акумулятора</li>
+                  <li class="service_text">Підвезення палива</li>
+                  <li class="service_text">Заміна колодок</li>
+                  <li class="service_text">Підкачування коліс</li>
+                </ul>
+              </li>
+              <li class="service_item">
+                <img
+                  src="./src/images/svg/service-color-icon3.svg"
+                  alt=" car service icon"
+                  width="110"
+                />
+                <ul class="description">
+                  <li class="list_title">Допомога в дорозі</li>
+                  <li class="service_text">Підвезення та заміна</li>
+                  <li class="service_text">Підвезення палива</li>
+                  <li class="service_text">Заміна колодок</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <ul class="service_icons_list">
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card1.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card2.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card3.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card4.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card5.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card6-small.svg"
+                alt="car service icon"
+                width="150"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card7.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card8.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card9.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card10.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card11.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card12.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card13.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card14.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+            <li class="service_icon_item">
+              <img
+                src="./src/images/svg/service-card15.svg"
+                alt="car service icon"
+              />
+              <p>
+                Допомога в <br />
+                дорозі
+              </p>
+            </li>
+          </ul>
+        </section>
+        <article>
+          <div class="article_text">
+            <h2>
+              Компанія «Formula» надає послугу мобільний шиномонтаж 24/7 у Києві
+              та області.
+            </h2>
+            <p>
+              Наша спеціалізація - надання автомобілістам виїзних послуг
+              допомоги на дорогах, серед яких: мобільний - пересувний шиномонтаж
+              з виїздом додому, до офісу або в будь-яке інше місце на дорозі,
+              евакуатор, доставка та зберігання шин, ремонт автоелектрики та
+              інших послуг технічного характеру.
+            </p>
+          </div>
+        </article>
+        <section class="service_for_transport">
+          <div class="headers_decor transport_section">
+            <div class="accent"></div>
+            <h2>ідеальний сервіс для усіх видів транспорту:</h2>
+          </div>
+          <ul class="transport_cards_list">
+            <li class="transport_card_item">
+              <img src="./src/images/svg/transport1.svg" alt="moto" />
+              <p>мотоцикли та мототехника</p>
+            </li>
+            <li class="transport_card_item">
+              <img src="./src/images/svg/transport2.svg" alt="big car" />
+              <p>вантажні автомобілі</p>
+            </li>
+            <li class="transport_card_item">
+              <img src="./src/images/svg/transport3.svg" alt="tractor" />
+              <p>спеціальна техніка</p>
+            </li>
+            <li class="transport_card_item">
+              <img src="./src/images/svg/transport4.svg" alt="car" />
+              <p>легкові автомобілі</p>
+            </li>
+          </ul>
+        </section>
+        <section class="call_cost_section" id="costs_section">
+          <div class="headers_decor call_cost">
+            <div class="accent"></div>
+            <h2>Вартість виклику</h2>
+          </div>
+          <div class="city_area_container">
+            <div class="city_title_block">
+              <p class="city_title">Київ</p>
+              <div class="timing_price">
+                <div class="timing_price_item">
+                  <p class="timing">8:00 - 21:00</p>
+                  <p class="price">150 грн</p>
+                  <button type="submit" class="make_order_btn">замовити</button>
+                </div>
+                <div class="timing_price_item">
+                  <p class="timing">21:00 - 8:00</p>
+                  <p class="price">200 грн</p>
+                  <button type="submit" class="make_order_btn">замовити</button>
+                </div>
+              </div>
+            </div>
+            <div class="city_title_block">
+              <p class="city_title">Київська область</p>
+              <div class="timing_price">
+                <div class="timing_price_item">
+                  <p class="timing">8:00 - 21:00</p>
+                  <div>
+                    <p class="price">450 грн</p>
+                    <p class="addition_price">+ 12 грн/км</p>
+                  </div>
+                  <button type="submit" class="make_order_btn">замовити</button>
+                </div>
+                <div class="timing_price_item">
+                  <p class="timing">21:00 - 8:00</p>
+                  <div>
+                    <p class="price">450 грн</p>
+                    <p class="addition_price">+ 15 грн/км</p>
+                  </div>
+                  <button type="submit" class="make_order_btn">замовити</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="repair_price_section">
+          <div class="headers_decor repair_price">
+            <div class="accent"></div>
+            <h2>Вартість ремонту</h2>
+          </div>
+        </section> -->
+        <section class="work_examples_section">
+          <div class="headers_decor work_examples">
+            <div class="accent"></div>
+            <h2>наші роботи</h2>
+          </div>
+          <ul class="examples">
+            <li class="examples_item1">
+              <div class="decor_line"></div>
+            </li>
+            <li class="examples_item2">
+              <div class="decor_line"></div>
+            </li>
+            <li class="examples_item3">
+              <div class="decor_line"></div>
+            </li>
+            <li class="examples_item4">
+              <div class="decor_line"></div>
+            </li>
+            <li class="examples_item4">
+              <div class="decor_line"></div>
+            </li>
+            <li class="examples_item4">
+              <div class="decor_line"></div>
+            </li>
+            <li class="examples_item4">
+              <div class="decor_line"></div>
+            </li>
+          </ul>
+          <div class="slider_btns">
+            <button class="slider_btn prev">&#10216;</button
+            ><button class="slider_btn next">&#10217;</button>
+          </div>
+        </section>
+        <section class="testimonials_section" id="testimonials_section">
+          <div class="headers_decor testimonials">
+            <div class="accent"></div>
+            <h2>відгуки про нашу роботу</h2>
+          </div>
+          <ul class="testimonials_list">
+            <li class="testimonials_item">
+              <p>Євген</p>
+              <ul class="service_list">
+                <li class="service_item">Підвезення та заміна акумулятора</li>
+                <li class="service_item">Підвезення палива</li>
+                <li class="service_item">Заміна колодок</li>
+                <li class="service_item">Підкачування коліс</li>
+              </ul>
+              <p class="point">5.0</p>
+            </li>
+            <li class="testimonials_item">
+              <p>Марія</p>
+              <ul class="service_list">
+                <li class="service_item">Підвезення та заміна акумулятора</li>
+                <li class="service_item">Підвезення палива</li>
+                <li class="service_item">Заміна колодок</li>
+                <li class="service_item">Підкачування коліс</li>
+              </ul>
+              <p class="point">5.0</p>
+            </li>
+            <li class="testimonials_item">
+              <p>Олександр</p>
+              <ul class="service_list">
+                <li class="service_item">Підвезення та заміна акумулятора</li>
+                <li class="service_item">Підвезення палива</li>
+                <li class="service_item">Заміна колодок</li>
+                <li class="service_item">Підкачування коліс</li>
+              </ul>
+              <p class="point">5.0</p>
+            </li>
+            <li class="testimonials_item">
+              <p>Міша</p>
+              <ul class="service_list">
+                <li class="service_item">Підвезення та заміна акумулятора</li>
+                <li class="service_item">Підвезення палива</li>
+                <li class="service_item">Заміна колодок</li>
+                <li class="service_item">Підкачування коліс</li>
+              </ul>
+              <p class="point">5.0</p>
+            </li>
+            <li class="testimonials_item">
+              <p>Міша</p>
+              <ul class="service_list">
+                <li class="service_item">Підвезення та заміна акумулятора</li>
+                <li class="service_item">Підвезення палива</li>
+                <li class="service_item">Заміна колодок</li>
+                <li class="service_item">Підкачування коліс</li>
+              </ul>
+              <p class="point">5.0</p>
+            </li>
+            <li class="testimonials_item">
+              <p>Міша</p>
+              <ul class="service_list">
+                <li class="service_item">Підвезення та заміна акумулятора</li>
+                <li class="service_item">Підвезення палива</li>
+                <li class="service_item">Заміна колодок</li>
+                <li class="service_item">Підкачування коліс</li>
+              </ul>
+              <p class="point">5.0</p>
+            </li>
+          </ul>
+          <div class="slider_btns">
+            <button class="slider_btn prev">&#10216;</button
+            ><button class="slider_btn next">&#10217;</button>
+          </div>
+        </section>
+        <section class="make_order_section">
+          <div class="make_order_photo">
+            <div class="decor_photo"></div>
+          </div>
+          <div class="decor_make_order"></div>
+          <div class="make_order_block">
+            <div class="make_order_info">
+              <div class="headers_decor make_order">
+                <div class="accent"></div>
+                <h2>залишити замовлення</h2>
+              </div>
+              <p class="make_order_text">
+                Залиште своє замовлення і майстер зателефонує Вам найближчим
+                часом або наберіть <span>+380 50 63 65 462</span>
+              </p>
+              <form action="#" class="make_order_form">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ім’я"
+                  class="input_name make_order"
+                  required
+                  pattern="/^[a-zA-Z0-9]+$/"
+                /><input
+                  type="text"
+                  name="phone"
+                  placeholder="Телефон"
+                  class="input_phone_number make_order"
+                  required
+                />
+                <textarea
+                  name="comment"
+                  id="#"
+                  cols="30"
+                  rows="5"
+                  placeholder="Коментар"
+                  class="textarea_comment make_order"
+                ></textarea>
+                <button type="submit" class="call_order_btn make_order">
+                  замовити дзвінок
+                </button>
+              </form>
+            </div>
+            <div class="decor_blockY"></div>
+            <div class="decor_blockX"></div>
+          </div>
+        </section>
+        <section class="questions_section" id="questions_section">
+          <div class="headers_decor questions">
+            <div class="accent"></div>
+            <h2>найчастіші запитання</h2>
+          </div>
+          <ul class="questions_list">
+            <li class="question_item">
+              <div class="quection_block">
+                <p class="question">Де знаходиться Ваш шиномонтаж?</p>
+                <button class="question_btn">&#10217;</button>
+              </div>
+              <p class="answer hidden">
+                Фізичної точки локалізації Мобільного шиномонтажу не існує –
+                бригада виїде для надання технічної допомоги до будь-якої точки
+                Києва та Київської області. <br />
+                <br />
+                Наші послуги доступні і на правому, і на лівому березі столиці,
+                без вихідних та перерв на обід. Немає необхідності
+                підлаштовуватися під графік роботи СТО або витрачати час у
+                довгих чергах: виїзна майстерня прибуде під вікна вашого будинку
+                чи будь-яку точку галасливих київських вулиць – потрібна лише
+                можливість припаркуватися двом автомобілям.
+              </p>
+            </li>
+            <li class="question_item">
+              <div class="quection_block">
+                <p class="question">Як довго на Вас чекати?</p>
+                <button class="question_btn">&#10217;</button>
+              </div>
+              <p class="answer hidden"></p>
+            </li>
+            <li class="question_item">
+              <div class="quection_block">
+                <p class="question">Які Ви даєте гарантії?</p>
+                <button class="question_btn">&#10217;</button>
+              </div>
+              <p class="answer hidden"></p>
+            </li>
+            <li class="question_item">
+              <div class="quection_block">
+                <p class="question">
+                  Чи даєте Ви якісь документи після ремонту?
+                </p>
+                <button class="question_btn">&#10217;</button>
+              </div>
+              <p class="answer hidden"></p>
+            </li>
+            <li class="question_item">
+              <div class="quection_block">
+                <p class="question">
+                  Чи можна розраховувати на якусь знижку за оптове замовлення?
+                </p>
+                <button class="question_btn">&#10217;</button>
+              </div>
+              <p class="answer hidden"></p>
+            </li>
+            <li class="question_item">
+              <div class="quection_block">
+                <p class="question">
+                  Який мінімальний та максимальний розмір колес Ви обслуговуєте?
+                </p>
+                <button class="question_btn">&#10217;</button>
+              </div>
+              <p class="answer hidden"></p>
+            </li>
+            <li class="question_item">
+              <div class="quection_block">
+                <p class="question">Чому так дорого/ дешево?</p>
+                <button class="question_btn">&#10217;</button>
+              </div>
+              <p class="answer hidden"></p>
+            </li>
+            <li class="question_item">
+              <div class="quection_block">
+                <p class="question">На якому обладнанні Ви працюєте?</p>
+                <button class="question_btn">&#10217;</button>
+              </div>
+              <p class="answer hidden"></p>
+            </li>
+            <li class="question_item">
+              <div class="quection_block">
+                <p class="question">
+                  Чи можемо ми викликати Вас на домашню адресу?
+                </p>
+                <button class="question_btn">&#10217;</button>
+              </div>
+              <p class="answer hidden"></p>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <div class="logo_number">
+          <img src="./src/images/svg/logo.svg" alt="logo" />
+          <div class="phone_number_block">
+            <img src="./src/images/svg/phone.svg" alt="phone" width="30" />
+            <div class="contact_number">
+              <a href="tel:+38 (050) 63 65 462" class="phone_number_link"
+                >+38 (050) 63 65 462</a
+              >
+              <p class="time_call_info">цілодобово по Україні</p>
+            </div>
           </div>
         </div>
         <form action="#" method="#" class="call_order_form">
-          <h2>замовити виїзд спеціаліста 24/7</h2>
           <input
             type="text"
             name="name"
@@ -71,7 +686,8 @@
             class="input_name"
             required
             pattern="/^[a-zA-Z0-9]+$/"
-          /><input
+          />
+          <input
             type="text"
             name="phone"
             placeholder="Телефон"
@@ -81,629 +697,20 @@
             замовити дзвінок
           </button>
         </form>
-        <div class="hero_bottom_block">
-          <div class="hero_bottom_item">
-            <img
-              src="./src/images/svg/швидко.svg"
-              alt="знак захисту"
-              width="28"
-            />
-            <p>Швидко</p>
-          </div>
-          <div class="grad_border"></div>
-          <div class="hero_bottom_item">
-            <img
-              src="./src/images/svg/зручно.svg"
-              alt="знак якості"
-              width="35"
-            />
-            <p>Зручно</p>
-          </div>
-          <div class="grad_border"></div>
-          <div class="hero_bottom_item">
-            <img
-              src="./src/images/svg/якісно.svg"
-              alt="знак добре"
-              width="35"
-            />
-            <p>Якісно</p>
-          </div>
+        <div class="footer_nav">
+          <a href="#services_section">Послуги</a
+          ><a href="#costs_section">Ціни</a
+          ><a href="#testimonials_section">Відгуки</a
+          ><a href="#questions_section" lang="en">FAQ</a>
         </div>
-      </div>
-      <section class="services" id="services_section">
-        <div class="headers_decor">
-          <div class="accent"></div>
-          <h2>Послуги з шиномонтажу</h2>
-        </div>
-        <div class="service_description">
-          <img
-            src="./src/images/svg/service-main.svg"
-            alt="car servise icon"
-            width="365"
-          />
-          <ul class="service_list">
-            <li class="service_item">
-              <img
-                src="./src/images/svg/service-color-icon4.svg"
-                alt=" car service icon"
-                width="110"
-              />
-              <ul class="description">
-                <li class="list_title">Допомога в дорозі</li>
-                <li class="service_text">Підвезення та заміна акумулятора</li>
-                <li class="service_text">Підвезення палива</li>
-                <li class="service_text">Заміна колодок</li>
-                <li class="service_text">Підкачування коліс</li>
-              </ul>
-            </li>
-            <li class="service_item midle">
-              <img
-                src="./src/images/svg/service-color-icon1.svg"
-                alt=" car service icon"
-                width="110"
-              />
-              <ul class="description">
-                <li class="list_title">Допомога в дорозі</li>
-                <li class="service_text">Підвезення та заміна</li>
-                <li class="service_text">Підвезення палива</li>
-                <li class="service_text">Заміна колодок</li>
-              </ul>
-            </li>
-            <li class="service_item midle">
-              <img
-                src="./src/images/svg/service-color-icon2.svg"
-                alt=" car service icon"
-                width="110"
-              />
-              <ul class="description">
-                <li class="list_title">Допомога в дорозі</li>
-                <li class="service_text">Підвезення та заміна акумулятора</li>
-                <li class="service_text">Підвезення палива</li>
-                <li class="service_text">Заміна колодок</li>
-                <li class="service_text">Підкачування коліс</li>
-              </ul>
-            </li>
-            <li class="service_item">
-              <img
-                src="./src/images/svg/service-color-icon3.svg"
-                alt=" car service icon"
-                width="110"
-              />
-              <ul class="description">
-                <li class="list_title">Допомога в дорозі</li>
-                <li class="service_text">Підвезення та заміна</li>
-                <li class="service_text">Підвезення палива</li>
-                <li class="service_text">Заміна колодок</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <ul class="service_icons_list">
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card1.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card2.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card3.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card4.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card5.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card6-small.svg"
-              alt="car service icon"
-              width="150"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card7.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card8.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card9.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card10.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card11.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card12.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card13.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card14.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-          <li class="service_icon_item">
-            <img
-              src="./src/images/svg/service-card15.svg"
-              alt="car service icon"
-            />
-            <p>
-              Допомога в <br />
-              дорозі
-            </p>
-          </li>
-        </ul>
-      </section>
-      <article>
-        <div class="article_text">
-          <h2>
-            Компанія «Formula» надає послугу мобільний шиномонтаж 24/7 у Києві
-            та області.
-          </h2>
-          <p>
-            Наша спеціалізація - надання автомобілістам виїзних послуг допомоги
-            на дорогах, серед яких: мобільний - пересувний шиномонтаж з виїздом
-            додому, до офісу або в будь-яке інше місце на дорозі, евакуатор,
-            доставка та зберігання шин, ремонт автоелектрики та інших послуг
-            технічного характеру.
-          </p>
-        </div>
-      </article>
-      <section class="service_for_transport">
-        <div class="headers_decor transport_section">
-          <div class="accent"></div>
-          <h2>ідеальний сервіс для усіх видів транспорту:</h2>
-        </div>
-        <ul class="transport_cards_list">
-          <li class="transport_card_item">
-            <img src="./src/images/svg/transport1.svg" alt="moto" />
-            <p>мотоцикли та мототехника</p>
-          </li>
-          <li class="transport_card_item">
-            <img src="./src/images/svg/transport2.svg" alt="big car" />
-            <p>вантажні автомобілі</p>
-          </li>
-          <li class="transport_card_item">
-            <img src="./src/images/svg/transport3.svg" alt="tractor" />
-            <p>спеціальна техніка</p>
-          </li>
-          <li class="transport_card_item">
-            <img src="./src/images/svg/transport4.svg" alt="car" />
-            <p>легкові автомобілі</p>
-          </li>
-        </ul>
-      </section>
-      <section class="call_cost_section" id="costs_section">
-        <div class="headers_decor call_cost">
-          <div class="accent"></div>
-          <h2>Вартість виклику</h2>
-        </div>
-        <div class="city_area_container">
-          <div class="city_title_block">
-            <p class="city_title">Київ</p>
-            <div class="timing_price">
-              <div class="timing_price_item">
-                <p class="timing">8:00 - 21:00</p>
-                <p class="price">150 грн</p>
-                <button type="submit" class="make_order_btn">замовити</button>
-              </div>
-              <div class="timing_price_item">
-                <p class="timing">21:00 - 8:00</p>
-                <p class="price">200 грн</p>
-                <button type="submit" class="make_order_btn">замовити</button>
-              </div>
-            </div>
-          </div>
-          <div class="city_title_block">
-            <p class="city_title">Київська область</p>
-            <div class="timing_price">
-              <div class="timing_price_item">
-                <p class="timing">8:00 - 21:00</p>
-                <div>
-                  <p class="price">450 грн</p>
-                  <p class="addition_price">+ 12 грн/км</p>
-                </div>
-                <button type="submit" class="make_order_btn">замовити</button>
-              </div>
-              <div class="timing_price_item">
-                <p class="timing">21:00 - 8:00</p>
-                <div>
-                  <p class="price">450 грн</p>
-                  <p class="addition_price">+ 15 грн/км</p>
-                </div>
-                <button type="submit" class="make_order_btn">замовити</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- <section class="repair_price_section">
-        <div class="headers_decor repair_price">
-          <div class="accent"></div>
-          <h2>Вартість ремонту</h2>
-        </div>
-      </section> -->
-      <section class="work_examples_section">
-        <div class="headers_decor work_examples">
-          <div class="accent"></div>
-          <h2>наші роботи</h2>
-        </div>
-        <ul class="examples">
-          <li class="examples_item1">
-            <div class="decor_line"></div>
-          </li>
-          <li class="examples_item2">
-            <div class="decor_line"></div>
-          </li>
-          <li class="examples_item3">
-            <div class="decor_line"></div>
-          </li>
-          <li class="examples_item4">
-            <div class="decor_line"></div>
-          </li>
-          <li class="examples_item4">
-            <div class="decor_line"></div>
-          </li>
-          <li class="examples_item4">
-            <div class="decor_line"></div>
-          </li>
-          <li class="examples_item4">
-            <div class="decor_line"></div>
-          </li>
-        </ul>
-        <div class="slider_btns">
-          <button class="slider_btn prev">&#10216;</button
-          ><button class="slider_btn next">&#10217;</button>
-        </div>
-      </section>
-      <section class="testimonials_section" id="testimonials_section">
-        <div class="headers_decor testimonials">
-          <div class="accent"></div>
-          <h2>відгуки про нашу роботу</h2>
-        </div>
-        <ul class="testimonials_list">
-          <li class="testimonials_item">
-            <p>Євген</p>
-            <ul class="service_list">
-              <li class="service_item">Підвезення та заміна акумулятора</li>
-              <li class="service_item">Підвезення палива</li>
-              <li class="service_item">Заміна колодок</li>
-              <li class="service_item">Підкачування коліс</li>
-            </ul>
-            <p class="point">5.0</p>
-          </li>
-          <li class="testimonials_item">
-            <p>Марія</p>
-            <ul class="service_list">
-              <li class="service_item">Підвезення та заміна акумулятора</li>
-              <li class="service_item">Підвезення палива</li>
-              <li class="service_item">Заміна колодок</li>
-              <li class="service_item">Підкачування коліс</li>
-            </ul>
-            <p class="point">5.0</p>
-          </li>
-          <li class="testimonials_item">
-            <p>Олександр</p>
-            <ul class="service_list">
-              <li class="service_item">Підвезення та заміна акумулятора</li>
-              <li class="service_item">Підвезення палива</li>
-              <li class="service_item">Заміна колодок</li>
-              <li class="service_item">Підкачування коліс</li>
-            </ul>
-            <p class="point">5.0</p>
-          </li>
-          <li class="testimonials_item">
-            <p>Міша</p>
-            <ul class="service_list">
-              <li class="service_item">Підвезення та заміна акумулятора</li>
-              <li class="service_item">Підвезення палива</li>
-              <li class="service_item">Заміна колодок</li>
-              <li class="service_item">Підкачування коліс</li>
-            </ul>
-            <p class="point">5.0</p>
-          </li>
-          <li class="testimonials_item">
-            <p>Міша</p>
-            <ul class="service_list">
-              <li class="service_item">Підвезення та заміна акумулятора</li>
-              <li class="service_item">Підвезення палива</li>
-              <li class="service_item">Заміна колодок</li>
-              <li class="service_item">Підкачування коліс</li>
-            </ul>
-            <p class="point">5.0</p>
-          </li>
-          <li class="testimonials_item">
-            <p>Міша</p>
-            <ul class="service_list">
-              <li class="service_item">Підвезення та заміна акумулятора</li>
-              <li class="service_item">Підвезення палива</li>
-              <li class="service_item">Заміна колодок</li>
-              <li class="service_item">Підкачування коліс</li>
-            </ul>
-            <p class="point">5.0</p>
-          </li>
-        </ul>
-        <div class="slider_btns">
-          <button class="slider_btn prev">&#10216;</button
-          ><button class="slider_btn next">&#10217;</button>
-        </div>
-      </section>
-      <section class="make_order_section">
-        <div class="make_order_photo">
-          <div class="decor_photo"></div>
-        </div>
-        <div class="decor_make_order"></div>
-        <div class="make_order_block">
-          <div class="make_order_info">
-            <div class="headers_decor make_order">
-              <div class="accent"></div>
-              <h2>залишити замовлення</h2>
-            </div>
-            <p class="make_order_text">
-              Залиште своє замовлення і майстер зателефонує Вам найближчим часом
-              або наберіть <span>+380 50 63 65 462</span>
-            </p>
-            <form action="#" class="make_order_form">
-              <input
-                type="text"
-                name="name"
-                placeholder="Ім’я"
-                class="input_name make_order"
-                required
-                pattern="/^[a-zA-Z0-9]+$/"
-              /><input
-                type="text"
-                name="phone"
-                placeholder="Телефон"
-                class="input_phone_number make_order"
-                required
-              />
-              <textarea
-                name="comment"
-                id="#"
-                cols="30"
-                rows="5"
-                placeholder="Коментар"
-                class="textarea_comment make_order"
-              ></textarea>
-              <button type="submit" class="call_order_btn make_order">
-                замовити дзвінок
-              </button>
-            </form>
-          </div>
-          <div class="decor_blockY"></div>
-          <div class="decor_blockX"></div>
-        </div>
-      </section>
-      <section class="questions_section" id="questions_section">
-        <div class="headers_decor questions">
-          <div class="accent"></div>
-          <h2>найчастіші запитання</h2>
-        </div>
-        <ul class="questions_list">
-          <li class="question_item">
-            <div class="quection_block">
-              <p class="question">Де знаходиться Ваш шиномонтаж?</p>
-              <button class="question_btn">&#10217;</button>
-            </div>
-            <p class="answer hidden">
-              Фізичної точки локалізації Мобільного шиномонтажу не існує –
-              бригада виїде для надання технічної допомоги до будь-якої точки
-              Києва та Київської області. <br />
-              <br />
-              Наші послуги доступні і на правому, і на лівому березі столиці,
-              без вихідних та перерв на обід. Немає необхідності
-              підлаштовуватися під графік роботи СТО або витрачати час у довгих
-              чергах: виїзна майстерня прибуде під вікна вашого будинку чи
-              будь-яку точку галасливих київських вулиць – потрібна лише
-              можливість припаркуватися двом автомобілям.
-            </p>
-          </li>
-          <li class="question_item">
-            <div class="quection_block">
-              <p class="question">Як довго на Вас чекати?</p>
-              <button class="question_btn">&#10217;</button>
-            </div>
-            <p class="answer hidden"></p>
-          </li>
-          <li class="question_item">
-            <div class="quection_block">
-              <p class="question">Які Ви даєте гарантії?</p>
-              <button class="question_btn">&#10217;</button>
-            </div>
-            <p class="answer hidden"></p>
-          </li>
-          <li class="question_item">
-            <div class="quection_block">
-              <p class="question">Чи даєте Ви якісь документи після ремонту?</p>
-              <button class="question_btn">&#10217;</button>
-            </div>
-            <p class="answer hidden"></p>
-          </li>
-          <li class="question_item">
-            <div class="quection_block">
-              <p class="question">
-                Чи можна розраховувати на якусь знижку за оптове замовлення?
-              </p>
-              <button class="question_btn">&#10217;</button>
-            </div>
-            <p class="answer hidden"></p>
-          </li>
-          <li class="question_item">
-            <div class="quection_block">
-              <p class="question">
-                Який мінімальний та максимальний розмір колес Ви обслуговуєте?
-              </p>
-              <button class="question_btn">&#10217;</button>
-            </div>
-            <p class="answer hidden"></p>
-          </li>
-          <li class="question_item">
-            <div class="quection_block">
-              <p class="question">Чому так дорого/ дешево?</p>
-              <button class="question_btn">&#10217;</button>
-            </div>
-            <p class="answer hidden"></p>
-          </li>
-          <li class="question_item">
-            <div class="quection_block">
-              <p class="question">На якому обладнанні Ви працюєте?</p>
-              <button class="question_btn">&#10217;</button>
-            </div>
-            <p class="answer hidden"></p>
-          </li>
-          <li class="question_item">
-            <div class="quection_block">
-              <p class="question">
-                Чи можемо ми викликати Вас на домашню адресу?
-              </p>
-              <button class="question_btn">&#10217;</button>
-            </div>
-            <p class="answer hidden"></p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <div class="logo_number">
-        <img src="./src/images/svg/logo.svg" alt="logo" />
-        <div class="phone_number_block">
-          <img src="./src/images/svg/phone.svg" alt="phone" width="30" />
-          <div class="contact_number">
-            <a href="tel:+38 (050) 63 65 462" class="phone_number_link"
-              >+38 (050) 63 65 462</a
-            >
-            <p class="time_call_info">цілодобово по Україні</p>
-          </div>
-        </div>
-      </div>
-      <form action="#" method="#" class="call_order_form">
-        <input
-          type="text"
-          name="name"
-          placeholder="Ім’я"
-          class="input_name"
-          required
-          pattern="/^[a-zA-Z0-9]+$/"
+        <img
+          src="./src/images/svg/footer-tool-svg.svg"
+          alt="logo"
+          class="footer_tools_img"
         />
-        <input
-          type="text"
-          name="phone"
-          placeholder="Телефон"
-          class="input_phone_number"
-          required
-        /><button type="submit" class="call_order_btn">замовити дзвінок</button>
-      </form>
-      <div class="footer_nav">
-        <a href="#services_section">Послуги</a><a href="#costs_section">Ціни</a
-        ><a href="#testimonials_section">Відгуки</a
-        ><a href="#questions_section" lang="en">FAQ</a>
-      </div>
-      <img
-        src="./src/images/svg/footer-tool-svg.svg"
-        alt="logo"
-        class="footer_tools_img"
-      />
-      <p class="rights">FORMULA ©️ 2023 All rights reserved</p>
-    </footer>
+        <p class="rights">FORMULA ©️ 2023 All rights reserved</p>
+      </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/5.x/dist/jquery.inputmask.min.js"></script>
     <script type="module" src="./src/js/index.js"></script>

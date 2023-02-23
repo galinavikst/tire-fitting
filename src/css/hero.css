@@ -1,6 +1,8 @@
 .hero {
-  height: calc(100vh - 120px);
+  /* height: calc(100vh - 120px); */
+  /* height: 665px; */
   overflow: hidden;
+  padding: 0 0 60px;
   background-image: url(..//images/png/hero.png);
   background-repeat: no-repeat;
   background-size: 100% 122%;
