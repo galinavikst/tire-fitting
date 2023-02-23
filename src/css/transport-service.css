@@ -44,11 +44,11 @@
 
 @media screen and (max-width: 1280px) {
   .service_for_transport {
-    padding: 70px 110px;
+    padding: 70px 50px;
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 785px) {
   .service_for_transport {
     padding: 35px 30px;
   }

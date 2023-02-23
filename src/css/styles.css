@@ -6,7 +6,7 @@
   --make-order-form-input-color: #84a3b5;
   --headers-color: #00324f;
   --bright-accent: #15ffff;
-  --box-shadow: -2px 2px 4px 0px rgba(0, 103, 154, 0.41);
+  --box-shadow: 2px 2px 4px 0px rgba(0, 103, 154, 0.41);
   --main-background-color: #f9f9f9;
   --warning-color: #ff0000;
   --accent-gradient: linear-gradient(
@@ -46,6 +46,7 @@ html {
 body {
   font-family: var(--font-family-main);
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 a {
@@ -165,6 +166,14 @@ ul {
 }
 
 @media screen and (max-width: 576px) {
+  .headers_decor.call_cost,
+  .headers_decor.repair_price,
+  .headers_decor.work_examples,
+  .headers_decor.testimonials,
+  .headers_decor.questions {
+    text-align: center;
+  }
+
   .call_cost h2,
   .repair_price h2,
   .work_examples h2,
@@ -172,5 +181,6 @@ ul {
   .questions h2 {
     font-size: 30px;
     line-height: 20px;
+    text-align: center;
   }
 }

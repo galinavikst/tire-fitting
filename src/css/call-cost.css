@@ -95,7 +95,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 785px) {
   .call_cost_section {
     padding: 0 35px;
   }
