@@ -91,3 +91,67 @@ footer .phone_number_link {
   line-height: 18px;
   color: var(--disable-btn-color);
 }
+/*  */
+
+@media screen and (max-width: 1280px) {
+  footer {
+    padding: 35px;
+  }
+  .footer_nav {
+    right: 27%;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .footer_nav {
+    right: 20%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  footer {
+    display: block;
+    padding: 35px 40px;
+    height: fit-content;
+    background-position: right 60px bottom 35px;
+  }
+
+  .logo_number {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .logo_number img {
+    margin: 0;
+  }
+
+  footer .phone_number_block {
+    width: 285px;
+  }
+
+  .rights,
+  footer .call_order_form {
+    position: static;
+  }
+
+  .rights {
+    margin: 0 0 40px;
+  }
+
+  footer .call_order_form {
+    margin: 10% 0;
+  }
+
+  .footer_nav {
+    transform: none;
+    top: 35%;
+    right: 25%;
+  }
+
+  .footer_tools_img {
+    bottom: 35px;
+    width: 50%;
+  }
+}

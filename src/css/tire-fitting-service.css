@@ -126,3 +126,32 @@
     transform: rotateY(0deg);
   }
 }
+/* media query */
+@media (max-width: 1280px) {
+  .services {
+    padding: 65px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services {
+    padding: 35px;
+  }
+
+  .services h2 {
+    font-size: 30px;
+    line-height: 22px;
+  }
+
+  .service_description {
+    padding: 35px 0 60px;
+  }
+
+  .service_description > img {
+    display: none;
+  }
+
+  .service_item.midle {
+    margin: 40px 0;
+  }
+}

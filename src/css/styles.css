@@ -163,3 +163,14 @@ ul {
   border: 1px solid var(--disable-btn-color);
   transition: all 150ms ease-in-out;
 }
+
+@media screen and (max-width: 576px) {
+  .call_cost h2,
+  .repair_price h2,
+  .work_examples h2,
+  .testimonials h2,
+  .questions h2 {
+    font-size: 30px;
+    line-height: 20px;
+  }
+}

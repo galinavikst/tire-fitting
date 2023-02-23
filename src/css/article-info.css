@@ -19,3 +19,25 @@ article {
   text-align: center;
   color: var(--pure-white);
 }
+
+@media screen and (max-width: 1280px) {
+  article {
+    background-position: right;
+  }
+
+  .article_text {
+    width: 67%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  article {
+    padding: 40px;
+  }
+
+  .article_text {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
