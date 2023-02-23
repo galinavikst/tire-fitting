@@ -3,8 +3,8 @@ import { showHideAnswer } from "./questions.js";
 
 function addEvent(arr, event, func) {
   arr.forEach((el) => {
-    el.addEventListener(event, function (ev) {
-      ev.stopPropagation();
+    el.addEventListener(event, (ev) => {
+      // ev.stopPropagation();
       func(el);
     });
   });
@@ -15,6 +15,7 @@ export function addEvents() {
   const questionsItemArr = document.querySelectorAll(".question_item");
 
   addEvent(cardsArr, "mouseover", invert);
-  addEvent(cardsArr, "mouseout", invertBack);
+  addEvent(cardsArr, "mouseleave", invertBack);
+
   addEvent(questionsItemArr, "click", showHideAnswer);
 }

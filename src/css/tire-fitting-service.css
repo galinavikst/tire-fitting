@@ -58,8 +58,7 @@
 .service_icon_item:hover {
   cursor: pointer;
 }
-/* 
-.invert_back_item, */
+
 .service_icon_item {
   display: flex;
   align-items: center;
@@ -71,36 +70,22 @@
   animation: backRottateY-180 1s 1 forwards;
 }
 
-/* .firts_img, */
 .service_icon_item > img {
   margin: 0 auto;
 }
 
-/* .service_icon_item:hover,
-.service_icon_item:focus {
-  box-shadow: var(--box-shadow);
-  transition: 150ms all ease-in-out;
-
-  animation: outRotateY180 1s 1 forwards;
-  flex-direction: column;
-} */
-
 .service_icon_item.invert_out_item {
   display: flex;
-  box-shadow: var(--box-shadow);
   transition: 150ms all ease-in-out;
-
-  animation: outRotateY180 1s 1 forwards;
   flex-direction: column;
 }
 
-/* .service_icon_item:hover > img {
-  margin: 20px 15px;
-  width: 40%;
-  height: 40%;
-  align-self: flex-end;
-  transform: inherit;
-} */
+.rotate_out {
+  animation: outRotateY180 1s 1 forwards;
+}
+.shadow {
+  box-shadow: var(--box-shadow);
+}
 
 .service_icon_item .invert_out_img {
   margin: 20px 15px;
@@ -110,38 +95,19 @@
   transform: inherit;
 }
 
-/* .service_icon_item:hover > p {
-  display: block;
-  transform: inherit;
-} */
-
 .service_icon_item .invert_out_text {
   display: block;
   transform: inherit;
 }
 
-/* .invert_back_text, */
-.service_icon_item p {
+.service_icon_item > p {
   display: none;
+  padding: 0 10px;
   font-weight: 500;
   font-size: 19px;
   line-height: 90%;
   text-align: center;
 }
-
-/* .inverted {
-  flex-direction: column;
-  margin: 20px 15px;
-  align-self: flex-start;
-} */
-
-/* .invert_out {
-  animation: outRotateY180 1s 1 forwards;
-}
-
-.invert_back {
-  animation: backRottateY-180 1s 1 forwards;
-} */
 
 @keyframes outRotateY180 {
   form {
