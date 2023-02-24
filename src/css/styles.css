@@ -99,13 +99,11 @@ ul {
 .input_name,
 .input_phone_number {
   box-sizing: border-box;
-  margin: 10px 0;
   font-family: var(--font-family-main);
   display: block;
   line-height: 22px;
   font-size: 18px;
   padding: 15px 20px;
-  width: inherit;
   color: var(--pure-white);
   border: 1px solid var(--main-border-color);
   background: transparent;
@@ -123,17 +121,24 @@ ul {
 }
 
 .call_order_btn {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  width: inherit;
   padding: 15px;
+  width: 100%;
   text-transform: uppercase;
   font-family: var(--font-family-main);
   color: var(--pure-white);
   border: 2px solid var(--main-border-color);
   background: var(--btn-background-color);
+}
+
+.call_order_form {
+  width: 61%;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
 }
 
 .call_order_btn:hover,

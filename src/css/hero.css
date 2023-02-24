@@ -1,8 +1,11 @@
 .hero {
-  /* height: calc(100vh - 120px); */
-  /* height: 665px; */
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: calc(100vh - 120px);
   overflow: hidden;
-  padding: 0 0 60px;
+  position: relative;
+  padding: 3% 15%;
   background-image: url(..//images/png/hero.png);
   background-repeat: no-repeat;
   background-size: 100% 122%;
@@ -11,13 +14,15 @@
 
 .hero_title {
   display: flex;
-  justify-content: space-between;
-  margin: 85px 105px 25px 190px;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 4%;
+  height: 100%;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 89px;
+  font-size: 5rem;
   line-height: 108%;
   text-transform: uppercase;
   background: var(--main-linear-gradient);
@@ -27,12 +32,13 @@ h1 {
 }
 
 h1 > div {
-  font-size: 60px;
+  font-size: 3.5rem;
 }
 
 .location {
-  position: relative;
-  bottom: 25px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
 }
 
 .location > p {
@@ -45,24 +51,23 @@ h1 > div {
   -webkit-text-fill-color: transparent;
 }
 
-.call_order_form {
-  box-sizing: border-box;
-  margin: 0 0 65px 190px;
-  width: 370px;
+.hero .call_order_form {
+  height: 20%;
 }
 
 .hero h2 {
   font-weight: 400;
   font-size: 28px;
   line-height: 34px;
-  margin: 25px 0;
-  white-space: nowrap;
   color: var(--pure-white);
 }
 
 .hero_bottom_block {
   display: flex;
-  justify-content: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero_bottom_block p {
@@ -89,3 +94,37 @@ h1 > div {
   background: var(--border-grad-color);
 }
 /*  */
+
+@media screen and (max-height: 660px) {
+  .hero {
+    padding: 2% 15%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h1 > div {
+    font-size: 2rem;
+    line-height: 80%;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .call_order_form {
+    width: 80%;
+  }
+  .input_name,
+  .input_phone_number {
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .hero {
+    height: fit-content;
+    padding: 2% 15% 5%;
+  }
+}

@@ -1,12 +1,15 @@
 footer {
+  box-sizing: border-box;
   position: relative;
   display: flex;
+  justify-content: space-between;
   height: 280px;
-  padding: 35px 40px 25px 100px;
+  padding: 25px 30px 25px 100px;
   background: var(--pure-black);
   background-image: url("../images/svg/promotich-team.svg");
   background-repeat: no-repeat;
-  background-position: right 95px bottom 25px;
+  background-position: right 4% bottom 25px;
+  background-size: 8%;
 }
 
 footer .phone_number_block {
@@ -28,21 +31,27 @@ footer .contact_number {
 footer .call_order_form {
   box-sizing: border-box;
   width: 270px;
+  display: flex;
+  margin: 0 auto;
+  gap: 3%;
+  align-self: center;
 }
 
-.rights,
-footer .call_order_form {
+.rights {
   position: absolute;
   right: 0;
-  left: 0;
-  bottom: 34%;
-  margin: 0 auto 0 auto;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 25px;
+  width: fit-content;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--disable-btn-color);
 }
 
 footer .input_name,
 footer .input_phone_number {
   padding: 9px 17px;
-  margin: 5px 0;
 }
 
 footer .call_order_btn {
@@ -56,13 +65,14 @@ footer .phone_number_link {
 }
 
 .footer_tools_img {
-  position: absolute;
+  /* position: absolute; */
+  align-self: end;
+  width: 25%;
   right: 40px;
   bottom: 27px;
 }
 
 .logo_number {
-  padding: 20px;
   width: 265px;
   text-align: center;
 }
@@ -74,26 +84,19 @@ footer .phone_number_link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
   right: 28%;
   top: 50%;
-  transform: translate(-50%, -60%);
+  /* transform: translate(-50%, -60%); */
 }
 
 .footer_nav a {
   margin: 5px 0;
 }
 
-.rights {
-  bottom: 25px;
-  width: fit-content;
-  font-size: 15px;
-  line-height: 18px;
-  color: var(--disable-btn-color);
-}
 /*  */
 
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
   footer {
     padding: 35px;
   }
@@ -154,4 +157,4 @@ footer .phone_number_link {
     bottom: 35px;
     width: 50%;
   }
-}
+} */
