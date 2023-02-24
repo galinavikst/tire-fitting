@@ -69,8 +69,19 @@
   .transport_cards_list {
     flex-wrap: wrap;
   }
+
   .transport_card_item {
-    width: 46%;
+    width: 45%;
     margin: 10px;
+  }
+}
+
+@media screen and (max-width: 551px) {
+  .transport_cards_list {
+    justify-content: center;
+  }
+
+  .transport_card_item {
+    width: 80%;
   }
 }

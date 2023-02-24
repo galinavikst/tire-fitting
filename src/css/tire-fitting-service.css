@@ -52,16 +52,17 @@
 
 .flip_cards_list {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 25px 25px;
+  gap: 20px;
 }
 
 .flip_card {
   display: flex;
   align-items: center;
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  width: 195px;
+  height: 195px;
   perspective: 1000px;
 }
 
