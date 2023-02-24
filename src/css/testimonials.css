@@ -5,12 +5,14 @@
 }
 
 .testimonials_list {
+  position: relative;
   display: flex;
   justify-content: space-around;
-  padding: 55px 0 30px;
+  padding: 55px 0 70px;
 }
 
 .testimonials_item {
+  box-sizing: border-box;
   padding: 30px;
   width: 17%;
   background-color: var(--pure-white);

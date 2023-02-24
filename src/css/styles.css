@@ -148,6 +148,8 @@ ul {
 }
 
 .slider_btn {
+  position: absolute;
+  bottom: 0;
   margin: 15px;
   padding: 10px 15px;
   font-size: 15px;
@@ -157,6 +159,19 @@ ul {
   outline: 1px solid var(--secondary-accent-color);
   outline-offset: 3px;
   border: 1px solid var(--secondary-accent-color);
+}
+
+.next.slider_btn {
+  left: 50%;
+}
+
+.prev.slider_btn {
+  left: 45%;
+}
+
+.draggable .slick-track {
+  display: flex;
+  gap: 25px;
 }
 
 .slider_btn:disabled {
