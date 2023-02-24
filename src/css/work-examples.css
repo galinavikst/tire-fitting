@@ -9,7 +9,7 @@
   position: relative;
   display: flex;
   justify-content: space-evenly;
-  padding: 30px 30px 70px;
+  padding: 30px 30px 0;
 }
 
 .examples_item > img {
@@ -67,7 +67,7 @@
 
 /*  */
 @media (max-width: 1160px) {
-}
-
-@media screen and (max-width: 939px) {
+  .work_examples_section {
+    padding: 0 50px 50px;
+  }
 }

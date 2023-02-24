@@ -1,11 +1,14 @@
 import { addEvents } from "./events.js";
 import { addBgColor } from "./questions.js";
-import { addMask, slider } from "./jquery-func.js";
+import { addMask, slider, responsivSlider } from "./jquery-func.js";
 
 addBgColor();
 
 addEvents();
 
 addMask();
-slider(".testimonials_list");
-slider(".examples");
+
+slider(".testimonials_list", ".prev_testimonial", ".next_testimonial");
+slider(".examples", ".prev_examples", ".next_examples");
+responsivSlider(".testimonials_list");
+responsivSlider(".examples");
