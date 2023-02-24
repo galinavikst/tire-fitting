@@ -185,6 +185,22 @@ ul {
   transition: all 150ms ease-in-out;
 }
 
+@media screen and (max-width: 1160px) {
+  .next.slider_btn {
+    left: 52%;
+  }
+
+  .prev.slider_btn {
+    left: 42%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .prev.slider_btn {
+    left: 35%;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .headers_decor.call_cost,
   .headers_decor.repair_price,
@@ -202,5 +218,11 @@ ul {
     font-size: 30px;
     line-height: 20px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 494px) {
+  .prev.slider_btn {
+    left: 22%;
   }
 }
