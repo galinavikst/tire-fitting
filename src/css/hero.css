@@ -137,6 +137,20 @@ h1 > div {
     padding: 2% 5% 9%;
   }
 
+  .phone_number_link {
+    font-size: 19px;
+    line-height: 15px;
+  }
+
+  .time_call_info {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .phone_number_block {
+    padding: 1% 4%;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -155,7 +169,7 @@ h1 > div {
     bottom: 0;
   }
 
-  header {
+  .header {
     height: 75px;
   }
 

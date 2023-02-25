@@ -5,9 +5,9 @@ header {
 
 .header {
   box-sizing: border-box;
+  height: 120px;
   max-width: 1280px;
   margin: 0 auto;
-  height: 120px;
   display: flex;
   justify-content: space-between;
   padding: 1% 5%;
@@ -33,7 +33,7 @@ nav a {
   box-sizing: border-box;
   width: 345px;
   display: flex;
-  padding: 17px 40px;
+  padding: 2% 4%;
   border: 1px solid var(--main-border-color);
 }
 
