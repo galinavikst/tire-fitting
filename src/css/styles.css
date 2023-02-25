@@ -162,8 +162,8 @@ ul {
   outline: 1px solid var(--secondary-accent-color);
   outline-offset: 3px;
   border: 1px solid var(--secondary-accent-color);
-  -webkit-appearance: none; /* remove default appearance in safari */
-  -webkit-focus-ring-color: var(--secondary-accent-color);
+  /* -webkit-appearance: none; /* remove default appearance in safari */
+  /* -webkit-focus-ring-color: var(--secondary-accent-color); */
 }
 
 .draggable .slick-track {
