@@ -78,8 +78,7 @@
 .make_order_form {
   display: flex;
   flex-direction: column;
-  gap: 1%;
-  /* height: 100%; */
+  gap: 5px;
   width: 65%;
   margin: 0 auto;
   text-align: center;

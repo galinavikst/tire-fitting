@@ -83,11 +83,10 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: var(--font-family-main);
   border: 1px solid var(--main-border-color);
   border-top: 2px solid var(--main-border-color);
   background-color: var(--pure-white);
-  /* Disable default touch behavior */
-  touch-action: manipulation;
 }
 
 .make_order_btn:hover,

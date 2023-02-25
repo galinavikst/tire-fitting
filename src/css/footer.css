@@ -38,7 +38,7 @@ footer .call_order_form {
   width: 270px;
   display: flex;
   margin: 0 auto;
-  gap: 3%;
+  gap: 5px;
   align-self: center;
 }
 

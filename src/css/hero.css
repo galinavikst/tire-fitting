@@ -7,7 +7,7 @@
   height: calc(100vh - 120px);
   overflow: hidden;
   position: relative;
-  padding: 3% 15%;
+  padding: 80px 100px;
 }
 
 .hero_container {
@@ -20,8 +20,8 @@
 .hero_title {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  gap: 4%;
+  justify-content: center;
+  gap: 25px;
   height: 100%;
 }
 
@@ -57,7 +57,7 @@ h1 > div {
 }
 
 .hero .call_order_form {
-  height: 20%;
+  height: fit-content;
 }
 
 .hero h2 {
@@ -102,7 +102,11 @@ h1 > div {
 
 @media (max-height: 660px) {
   .hero {
-    padding: 2% 15%;
+    padding: 2% 5%;
+  }
+
+  .hero_title {
+    gap: 10px;
   }
 
   h1 {
@@ -180,6 +184,10 @@ h1 > div {
 }
 
 @media (max-width: 750px) {
+  .hero {
+    padding: 80px 25px;
+  }
+
   .hero_bottom_block {
     transform: translateX(-50%) scale(0.5);
     bottom: 0;

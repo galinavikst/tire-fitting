@@ -10,17 +10,17 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 1% 5%;
+  padding: 10px 12px;
 }
 
 .nav_contact {
   display: flex;
-  gap: 0%;
+  gap: 80px;
 }
 
 nav {
   display: flex;
-  gap: 0%;
+  gap: 50px;
   align-self: center;
 }
 
@@ -60,7 +60,4 @@ nav a {
   letter-spacing: 0.1em;
 }
 
-.call_order_btn {
-  padding: 10px;
-}
 /*  */
