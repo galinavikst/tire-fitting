@@ -20,6 +20,7 @@
   overflow: hidden visible;
   height: 520px;
   align-items: end;
+  -webkit-align-items: flex-end;
   display: flex;
 }
 .examples .slick-slide {

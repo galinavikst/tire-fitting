@@ -81,6 +81,8 @@
   border: 1px solid var(--main-border-color);
   border-top: 2px solid var(--main-border-color);
   background-color: var(--pure-white);
+  /* Disable default touch behavior */
+  touch-action: manipulation;
 }
 
 .make_order_btn:hover,
