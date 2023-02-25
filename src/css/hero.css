@@ -65,7 +65,7 @@ h1 > div {
 .hero_bottom_block {
   display: flex;
   position: absolute;
-  bottom: 5%;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -95,7 +95,7 @@ h1 > div {
 }
 /*  */
 
-@media screen and (max-height: 660px) {
+@media (max-height: 660px) {
   .hero {
     padding: 2% 15%;
   }
@@ -120,11 +120,49 @@ h1 > div {
   .input_phone_number {
     padding: 10px 15px;
   }
+
+  .location {
+    transform: scale(0.5);
+  }
 }
 
-@media screen and (max-height: 500px) {
+@media (max-height: 500px) {
   .hero {
     height: fit-content;
-    padding: 2% 15% 5%;
+    padding: 2% 5% 9%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1 > div {
+    font-size: 1.5rem;
+    line-height: 80%;
+  }
+
+  .hero h2 {
+    font-size: 16px;
+  }
+
+  .hero_bottom_block {
+    transform: translateX(-50%) scale(0.5);
+    bottom: 0;
+  }
+
+  header {
+    height: 75px;
+  }
+
+  .location {
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero_bottom_block {
+    transform: translateX(-50%) scale(0.5);
+    bottom: 0;
   }
 }
