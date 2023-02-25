@@ -1,13 +1,18 @@
 footer {
+  background: var(--pure-black);
+}
+
+.footer {
   box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
   position: relative;
   display: flex;
   justify-content: space-between;
   height: 280px;
   padding: 25px 30px 25px 100px;
-  background: var(--pure-black);
-  background-image: url("../images/svg/promotich-team.svg");
   background-repeat: no-repeat;
+  background-image: url("../images/svg/promotich-team.svg");
   background-position: right 4% bottom 25px;
   background-size: 8%;
 }
@@ -96,15 +101,7 @@ footer .phone_number_link {
 
 /*  */
 
-/* @media screen and (max-width: 1280px) {
-  footer {
-    padding: 35px;
-  }
-  .footer_nav {
-    right: 27%;
-  }
-}
-
+/* 
 @media screen and (max-width: 1125px) {
   .footer_nav {
     right: 20%;

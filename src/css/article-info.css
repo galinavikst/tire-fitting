@@ -1,13 +1,18 @@
-article {
-  padding: 60px;
+.article_container {
   background-image: url("../images/png/tools.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+article {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 105px;
+}
+
 .article_text {
-  width: 50%;
-  margin: 0 0 0 110px;
+  width: 67%;
 }
 
 .article_text > h2,
@@ -18,17 +23,6 @@ article {
   line-height: 117%;
   text-align: center;
   color: var(--pure-white);
-}
-
-@media screen and (max-width: 1280px) {
-  article {
-    background-position: right;
-  }
-
-  .article_text {
-    width: 67%;
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 576px) {

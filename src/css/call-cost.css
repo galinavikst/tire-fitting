@@ -1,8 +1,13 @@
 /* call-cost section */
+.call_cost_container {
+  background-color: var(--main-background-color);
+}
 
 .call_cost_section {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 0 100px;
-  background-color: var(--main-background-color);
 }
 
 .city_area_container {
@@ -92,11 +97,6 @@
   background-color: var(--main-border-color);
 }
 /*  */
-@media screen and (max-width: 1280px) {
-  .call_cost_section {
-    padding: 0 50px;
-  }
-}
 
 @media screen and (max-width: 785px) {
   .call_cost_section {

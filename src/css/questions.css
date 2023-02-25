@@ -1,6 +1,12 @@
-.questions_section {
-  padding: 75px 100px 40px;
+.questions_container {
   background: var(--pure-white-color);
+}
+
+.questions_section {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 75px 100px 40px;
 }
 
 .questions_list {
@@ -76,9 +82,6 @@
   transform: rotate(90deg);
 }
 /*  */
-
-@media screen and (max-width: 1280px) {
-}
 
 @media screen and (max-width: 576px) {
   .questions_section {

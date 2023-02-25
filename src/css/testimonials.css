@@ -1,7 +1,13 @@
 /* testimonials_section */
-.testimonials_section {
-  padding: 0 100px 35px;
+.testimonials_container {
   background-color: var(--main-background-color);
+}
+
+.testimonials_section {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 100px 35px;
 }
 
 .testimonials_list {
@@ -9,6 +15,10 @@
   display: flex;
   justify-content: space-around;
   padding: 55px 0 0;
+}
+
+.testimonials_list .slick-list {
+  height: 216px;
 }
 
 .testimonials_item {

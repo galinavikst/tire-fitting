@@ -1,4 +1,8 @@
 /*  services section*/
+.service_container {
+  background-color: var(--main-background-color);
+}
+
 .services h2 {
   display: inline;
   font-weight: 700;
@@ -10,8 +14,10 @@
 }
 
 .services {
-  padding: 85px 205px 80px;
-  background-color: var(--main-background-color);
+  padding: 85px 100px 80px;
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .service_description {
@@ -120,11 +126,6 @@
 }
 /*  */
 /* media query */
-@media (max-width: 1280px) {
-  .services {
-    padding: 65px 50px;
-  }
-}
 
 @media screen and (max-width: 939px) {
   .flip_card {
