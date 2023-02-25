@@ -34,6 +34,8 @@
 }
 
 .timing_price_item {
+  padding: 30px 0 0 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,7 +48,6 @@
 }
 
 .timing {
-  margin-top: 30px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
