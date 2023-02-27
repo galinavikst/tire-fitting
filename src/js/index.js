@@ -1,6 +1,9 @@
 import { addEvents } from "./events.js";
 import { addBgColor } from "./questions.js";
 import { addMask, slider, responsivSlider } from "./jquery-func.js";
+import { showMobileHeader } from "./hamb-menu.js";
+
+showMobileHeader();
 
 addBgColor();
 
