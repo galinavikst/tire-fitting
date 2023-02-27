@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  height: calc(100vh - 120px);
+  height: 100vh;
   overflow: hidden;
   position: relative;
   padding: 80px 100px;
@@ -42,7 +42,7 @@ h1 > div {
 
 .location {
   position: absolute;
-  top: 5%;
+  top: 15%;
   right: 5%;
 }
 
@@ -138,7 +138,7 @@ h1 > div {
 @media (max-height: 500px) {
   .hero {
     height: fit-content;
-    padding: 2% 5% 9%;
+    padding: 10% 5% 9%;
   }
 
   .phone_number_link {
@@ -171,15 +171,6 @@ h1 > div {
   .hero_bottom_block {
     transform: translateX(-50%) scale(0.5);
     bottom: 0;
-  }
-
-  /* .header {
-    height: 75px;
-  } */
-
-  .location {
-    top: 0;
-    right: 0;
   }
 }
 
