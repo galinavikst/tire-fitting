@@ -13,7 +13,7 @@
   margin: 60px 0 0;
 }
 
-.questions_list :nth-child(odd) {
+.question_item:nth-child(odd) {
   background-color: var(--addition-bg-color);
 }
 
