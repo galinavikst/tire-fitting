@@ -5,8 +5,6 @@ import { showMobileHeader } from "./hamb-menu.js";
 
 showMobileHeader();
 
-addBgColor();
-
 addEvents();
 
 addMask();
