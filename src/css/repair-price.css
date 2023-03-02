@@ -125,11 +125,13 @@ select:active {
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 760px) {
   .repair_price_section {
-    padding: 0 35px 70px;
+    padding: 0 40px 70px;
   }
+}
 
+@media (max-width: 580px) {
   .repaire_price_title h3 {
     font-size: 20px;
     line-height: 20px;
