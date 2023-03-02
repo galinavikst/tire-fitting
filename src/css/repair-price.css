@@ -1,6 +1,145 @@
-/* repair_price_section */
-.repair_price_section {
-  padding: 0 100px;
+.repair_price_container {
+  box-sizing: border-box;
   background-color: var(--main-background-color);
 }
-/*  */
+
+.repair_price_section {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 100px 70px;
+}
+
+.repaire_price_block {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding: 55px 90px 25px;
+}
+
+.repaire_price_title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+.repaire_price_title h3 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--headers-color);
+}
+
+.title_decor {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.title_decor span {
+  width: 6px;
+  height: 6px;
+  background: var(--disable-btn-color);
+}
+
+.price_info {
+  line-height: 20px;
+  color: var(--time-color);
+}
+
+.table_row {
+  display: flex;
+}
+.table_row:nth-child(odd) {
+  background-color: var(--price-table-bg-color);
+}
+
+.car_type {
+  width: 75%;
+  padding: 15px 90px 15px 0;
+  text-align: end;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--headers-color);
+}
+
+.repaire_price {
+  width: 25%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--main-background-color);
+}
+
+.table_header > .car_type,
+.repaire_price {
+  background: var(--main-border-color);
+  color: var(--pure-white);
+}
+
+.select_container {
+  width: 25%;
+  text-align: center;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  padding: 15px 0;
+  background: transparent;
+  border: none;
+  background-image: url("../images/svg/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+select:focus,
+select:active {
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .repaire_price_block {
+    padding: 30px;
+    gap: 75px;
+  }
+
+  .repaire_price_title h3 {
+    font-size: 25px;
+  }
+
+  .car_type {
+    padding: 15px 30px 15px 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .repair_price_section {
+    padding: 0 35px 70px;
+  }
+
+  .repaire_price_title h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .repaire_price_block {
+    padding: 25px 0;
+  }
+
+  .car_type {
+    padding: 15px 30px 15px 0;
+  }
+}

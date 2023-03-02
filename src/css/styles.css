@@ -32,6 +32,7 @@
   --addition-text-color: #bbbbbb;
   --main-linear-gradient: linear-gradient(180deg, #4eafeb 0%, #ffffff 100%);
   --main-border-color: #4eafeb;
+  --price-table-bg-color: #eef2f4;
 }
 
 * {
@@ -124,7 +125,6 @@ ul {
 }
 
 .call_order_btn {
-  /* box-sizing: border-box; */
   font-size: 15px;
   line-height: 20px;
   text-align: center;
