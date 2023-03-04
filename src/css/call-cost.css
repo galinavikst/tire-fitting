@@ -90,6 +90,7 @@
   background-color: transparent;
   appearance: none;
   -webkit-appearance: button;
+  background-image: none;
 }
 
 .make_order_btn:hover,
