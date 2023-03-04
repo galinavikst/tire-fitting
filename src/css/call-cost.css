@@ -87,6 +87,8 @@
   border: 1px solid var(--main-border-color);
   border-top: 2px solid var(--main-border-color);
   background-color: var(--pure-white);
+  appearance: none;
+  -webkit-appearance: button;
 }
 
 .make_order_btn:hover,
