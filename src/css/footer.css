@@ -19,7 +19,7 @@ footer {
 
 footer .phone_number_block {
   box-sizing: border-box;
-  width: inherit;
+  width: 100%;
   padding: 10px;
   margin: 0;
 }
@@ -35,9 +35,8 @@ footer .contact_number {
 
 footer .call_order_form {
   box-sizing: border-box;
-  width: 270px;
+  width: 25%;
   display: flex;
-  margin: 0 auto;
   gap: 5px;
   align-self: center;
 }
@@ -70,7 +69,6 @@ footer .phone_number_link {
 }
 
 .footer_tools_img {
-  /* position: absolute; */
   align-self: end;
   width: 25%;
   right: 40px;
@@ -89,10 +87,6 @@ footer .phone_number_link {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* position: absolute; */
-  right: 28%;
-  top: 50%;
-  /* transform: translate(-50%, -60%); */
 }
 
 .footer_nav a {
@@ -101,57 +95,64 @@ footer .phone_number_link {
 
 /*  */
 
-/* 
-@media screen and (max-width: 1125px) {
-  .footer_nav {
-    right: 20%;
-  }
-}
-
-@media screen and (max-width: 955px) {
-  footer {
-    display: block;
-    padding: 35px 40px;
+@media (max-width: 955px) {
+  .footer {
+    padding: 25px 60px 70px;
     height: fit-content;
-    background-position: right 60px bottom 35px;
-  }
-
-  .logo_number {
-    padding: 0;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
-
-  .logo_number img {
-    margin: 0;
-  }
-
-  footer .phone_number_block {
-    width: 285px;
-  }
-
-  .rights,
-  footer .call_order_form {
-    position: static;
-  }
-
-  .rights {
-    margin: 0 0 40px;
-  }
-
-  footer .call_order_form {
-    margin: 10% 0;
-  }
-
-  .footer_nav {
-    transform: none;
-    top: 35%;
-    right: 25%;
+    background-size: auto;
   }
 
   .footer_tools_img {
-    bottom: 35px;
-    width: 50%;
+    display: none;
   }
-} */
+
+  .rights {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer {
+    padding: 25px 30px 70px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .logo_number img {
+    width: 70px;
+  }
+
+  .logo_number {
+    width: 250px;
+  }
+
+  footer .phone_number_block {
+    padding: 5px;
+  }
+
+  footer .call_order_form {
+    width: 270px;
+  }
+
+  .footer_nav {
+    position: absolute;
+    right: 60px;
+    top: 40px;
+  }
+
+  .rights {
+    font-size: 9px;
+    left: 15px;
+    transform: translate(0%);
+  }
+}
+
+@media (max-width: 450px) {
+  .logo_number {
+    margin: 0 auto;
+  }
+
+  .footer_nav {
+    display: none;
+  }
+}

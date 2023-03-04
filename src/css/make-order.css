@@ -1,6 +1,12 @@
-.make_order_section {
-  display: flex;
+.make_order_container {
   background: var(--main-background-color);
+}
+
+.make_order_section {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .make_order_photo {
@@ -24,7 +30,6 @@
 
 .make_order_block {
   position: relative;
-  width: 57%;
   display: flex;
   width: calc(100% - 43%);
   justify-content: space-between;
@@ -117,4 +122,37 @@
   color: var(--pure-white);
   border: 1px solid var(--make-order-form-input-color);
   background: transparent;
+}
+
+@media (max-width: 900px) {
+  .make_order_info {
+    padding: 55px 15px;
+  }
+
+  .make_order_form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 650px) {
+  .make_order_info {
+    padding: 55px 20px;
+  }
+
+  .make_order_photo {
+    display: none;
+  }
+
+  .make_order_block {
+    width: 100%;
+  }
+
+  .make_order h2 {
+    font-size: 30px;
+    line-height: 25px;
+  }
+
+  .make_order_text {
+    font-size: 15px;
+  }
 }
