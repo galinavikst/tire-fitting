@@ -83,14 +83,12 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  color: var(--headers-color);
   font-family: var(--font-family-main);
   border: 1px solid var(--main-border-color);
   border-top: 2px solid var(--main-border-color);
-  /* background-color: var(--pure-white); */
   background-color: transparent;
   appearance: none;
-  -webkit-appearance: button;
-  background-image: none;
 }
 
 .make_order_btn:hover,
