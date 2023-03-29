@@ -10,13 +10,17 @@ export function showMobileHeader() {
   if (matchMedia("(max-width: 850px)").matches) {
     closeHambMenu();
     navContactBlock.classList.add("hidden");
+    navContactBlock.onclick = hambMenu;
     hamburger.classList.add("flex");
+  } else {
+    navContactBlock.onclick = null;
   }
 }
 
 export function hideMobileHeader() {
   if (matchMedia("(min-width: 851px)").matches) {
     navContactBlock.classList.remove("hidden");
+
     hamburger.classList.remove("flex");
   }
 }
