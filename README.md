@@ -1,6 +1,6 @@
 # Tire-fitting Formula
 
-This is a web application designed to send appointment requests for tire fitting to drivers. It is designed to be responsive to different screen sizes and uses media queries to adjust the layout accordingly.  
+This is a web application designed to send appointment requests for tire fitting in any location of the city. It is designed to be responsive to different screen sizes and uses media queries to adjust the layout accordingly.  
 
 ## Features:
 - User-friendly interface that allows drivers to easily submit appointment requests for tire fitting.
